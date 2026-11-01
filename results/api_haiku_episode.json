@@ -1,0 +1,39 @@
+{
+  "source": "results_audit/api_haiku.json",
+  "model": "claude-haiku-4-5",
+  "provider": "anthropic",
+  "metric": "EPISODE SUCCESS (plan executed to the goal) -- comparable to VSP",
+  "n": 600,
+  "n_without_plan": 0,
+  "success": 0.43666666666666665,
+  "failure_modes": {
+    "hole": 193,
+    "ran_out": 145
+  },
+  "by_level": {
+    "3": {
+      "n": 100,
+      "success": 0.64
+    },
+    "4": {
+      "n": 100,
+      "success": 0.48
+    },
+    "5": {
+      "n": 100,
+      "success": 0.52
+    },
+    "6": {
+      "n": 100,
+      "success": 0.33
+    },
+    "7": {
+      "n": 100,
+      "success": 0.37
+    },
+    "8": {
+      "n": 100,
+      "success": 0.28
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "layer": 21,
+  "levels": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "pooled": true,
+  "position": "hidden",
+  "max_new": 512,
+  "rungs": {
+    "pooled": {
+      "n": 600,
+      "1_free_generation": 0.33166666666666667,
+      "1_free_unparsed": 0.0,
+      "1_free_truncated": 0.79,
+      "2_forced_choice": 0.32,
+      "3_probe_then_rule": [
+        0.6983333333333334,
+        0.03158716335616237
+      ],
+      "4_linear_action": [
+        0.725,
+        0.028290163190291692
+      ],
+      "4_linear_action_shuffled": [
+        0.36833333333333335,
+        0.050974656012135626
+      ],
+      "5_mlp_action": [
+        0.7166666666666667,
+        0.02129606119032864
+      ],
+      "5_mlp_action_shuffled": [
+        0.4116666666666667,
+        0.06463543919553731
+      ],
+      "baselines": {
+        "uniform_4": 0.34458333333333335,
+        "uniform_on_grid": 0.44513888888888886,
+        "uniform_hazard_aware": 0.5618055555555556,
+        "goal_direction_TRUE_coords": 0.8583333333333333,
+        "best_constant": 0.3566666666666667
+      }
+    }
+  }
+}

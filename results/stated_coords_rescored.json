@@ -1,0 +1,45 @@
+{
+  "parser": "coord_parse.py (rewritten 2026-09-04)",
+  "models": {
+    "qwen25_3b": {
+      "name": "Qwen2.5-VL-3B",
+      "source": "geom_qwen25_3b_full.json",
+      "n": 600,
+      "stated_any": 1.0,
+      "stated_correct": 0.04666666666666667,
+      "stated_correct_either_indexing": 0.13666666666666666
+    },
+    "qwen25_7b": {
+      "name": "Qwen2.5-VL-7B",
+      "source": "geom_qwen25_7b_full.json",
+      "n": 600,
+      "stated_any": 0.9966666666666667,
+      "stated_correct": 0.11166666666666666,
+      "stated_correct_either_indexing": 0.17833333333333334
+    },
+    "qwen32": {
+      "name": "Qwen2.5-VL-32B",
+      "source": "geom_qwen32_full.json",
+      "n": 496,
+      "stated_any": 0.9717741935483871,
+      "stated_correct": 0.3588709677419355,
+      "stated_correct_either_indexing": 0.4274193548387097
+    },
+    "haiku": {
+      "name": "Claude Haiku 4.5",
+      "source": "api_haiku_geom.json",
+      "n": 600,
+      "stated_any": 0.9833333333333333,
+      "stated_correct": 0.5616666666666666,
+      "stated_correct_either_indexing": 0.5783333333333334
+    },
+    "claude": {
+      "name": "Claude Opus 5",
+      "source": "api_claude_geom.json",
+      "n": 600,
+      "stated_any": 0.9983333333333333,
+      "stated_correct": 0.98,
+      "stated_correct_either_indexing": 0.98
+    }
+  }
+}

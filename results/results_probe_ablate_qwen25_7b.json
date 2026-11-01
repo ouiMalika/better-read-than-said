@@ -1,0 +1,26 @@
+{
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "layer": 21,
+  "n_all": 600,
+  "n_edited": 150,
+  "alphas": [
+    1.0,
+    2.0
+  ],
+  "stride": 4,
+  "baseline_correct": 0.25333333333333335,
+  "conditions": {
+    "ablate_probe@0.0": {
+      "n": 150,
+      "probe_still_reads_optimal": 0.36666666666666664,
+      "emitted_is_optimal": 0.26,
+      "emitted_changed_from_baseline": 0.05333333333333334
+    },
+    "ablate_random@0.0": {
+      "n": 150,
+      "probe_still_reads_optimal": 0.78,
+      "emitted_is_optimal": 0.25333333333333335,
+      "emitted_changed_from_baseline": 0.07333333333333333
+    }
+  }
+}

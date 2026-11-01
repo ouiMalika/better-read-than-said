@@ -1,0 +1,36 @@
+{
+  "note": "no model involved; computed from the VSP maze set alone",
+  "p_per_move": 0.35,
+  "by_level": {
+    "3": {
+      "n": 100,
+      "mean_optimal_path_len": 2.1,
+      "implied_episode_success_at_p0.35": 0.109
+    },
+    "4": {
+      "n": 100,
+      "mean_optimal_path_len": 2.7,
+      "implied_episode_success_at_p0.35": 0.059
+    },
+    "5": {
+      "n": 100,
+      "mean_optimal_path_len": 3.2,
+      "implied_episode_success_at_p0.35": 0.035
+    },
+    "6": {
+      "n": 100,
+      "mean_optimal_path_len": 4.5,
+      "implied_episode_success_at_p0.35": 0.009
+    },
+    "7": {
+      "n": 100,
+      "mean_optimal_path_len": 5.2,
+      "implied_episode_success_at_p0.35": 0.004
+    },
+    "8": {
+      "n": 100,
+      "mean_optimal_path_len": 5.4,
+      "implied_episode_success_at_p0.35": 0.003
+    }
+  }
+}

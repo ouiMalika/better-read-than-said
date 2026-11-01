@@ -1,0 +1,4446 @@
+{
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "levels": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "n": 150,
+  "seed": 0,
+  "scored": 97,
+  "chance_uniform4_ctrl": 0.3402061855670103,
+  "chance_uniform4_unx": 0.38144329896907214,
+  "plan_source": {
+    "answer": 142,
+    "none": 6,
+    "answer_truncated": 2
+  },
+  "ctrl_reply_dist": {
+    "D": 52,
+    "R": 24,
+    "U": 17,
+    "L": 16
+  },
+  "unx_reply_dist": {
+    "D": 56,
+    "R": 25,
+    "U": 24,
+    "L": 4
+  },
+  "plan_next_dist": {
+    "R": 25,
+    "U": 18,
+    "L": 15,
+    "D": 9
+  },
+  "reply_equals_stated_last_move": {
+    "ctrl": 0.24770642201834864,
+    "unx": 0.1926605504587156
+  },
+  "cut_at_start_fraction": 0.5963302752293578,
+  "skipped": {
+    "no usable cut": 14,
+    "planned move enters a hole": 27
+  },
+  "ctrl_optimal_actual": [
+    0.6701030927835051,
+    97
+  ],
+  "unx_optimal_actual": [
+    0.5567010309278351,
+    97
+  ],
+  "unx_optimal_planned": [
+    0.4536082474226804,
+    97
+  ],
+  "ctrl_equals_plan_next": [
+    0.39655172413793105,
+    58
+  ],
+  "unx_equals_plan_next": [
+    0.22413793103448276,
+    58
+  ],
+  "reading": "Re-plans: unx_optimal_actual near ctrl_optimal_actual, unx_equals_plan_next low. Carries on regardless: unx_optimal_actual collapses while unx_optimal_planned and unx_equals_plan_next hold up.",
+  "per_instance": [
+    {
+      "id": "64.png",
+      "level": 7,
+      "plan": "LULU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the top right corner (row 1, column 7) to the goal position at the top left corner (row 1, column 1) while avoiding the holes represented by the blue circles.\n\nHere's the step-by-step plan:\n\n1. Move left to avoid the hole in the second column.\n2. Move left again to avoid another hole.\n3. Move left to reach the first column.\n4. Move up to reach the top row and the goal position.\n\nSo, the sequence of moves is:\n\n```\nL\nL\nL\nU\n```\n\nPutting it together with the prefix \"ANSWER:\", the final answer is:\n\n```\nANSWER:LULU\n```",
+      "k": 1,
+      "cut_pos": [
+        1,
+        5
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        5
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        2,
+        5
+      ],
+      "plan_next": "L",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "63.png",
+      "level": 6,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to move the player from the starting position to the goal position while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the position (3, 3).\n2. Move right to avoid the hole at (3, 2).\n3. Move up to reach the goal at (2, 3).\n\nSo, the sequence of moves is:\n\n```\nANSWER: R U\n```",
+      "k": 0,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "36.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this sequence of moves:\n\n1. Start at the position (2, 2).\n2. Move right to avoid the hole at (1, 2).\n3. Move up to reach the goal at (1, 3).\n\nSo, the full plan is:\n\n```\nANSWER: R U",
+      "k": 0,
+      "cut_pos": [
+        2,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "80.png",
+      "level": 6,
+      "plan": "ULLDR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 5, 3).\n2. Move up to avoid the hole in the top left corner (position 4, 3).\n3. Move left to reach the left side of the grid (position 4, 2).\n4. Move down to reach the bottom row (position 3, 2).\n5. Move right to reach the goal (position 3, 3).\n\nSo, the full plan is:\n\n```\nANSWER: ULLDR\n```",
+      "k": 1,
+      "cut_pos": [
+        2,
+        4
+      ],
+      "planned_move": "L",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        4
+      ],
+      "plan_next": "L",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "74.png",
+      "level": 7,
+      "plan": "URRRUURR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom-left corner to the top-right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 3, 3).\n2. Move up to position 2, 3.\n3. Move right to position 2, 4.\n4. Move up to position 1, 4.\n5. Move right to position 1, 5.\n6. Move up to position 0, 5.\n7. Move right to position 0, 6.\n8. Move up to position -1, 6.\n9. Move right to position -1, 7.\n\nSo, the full plan is:\n\n```\nANSWER: URRRUURR\n```",
+      "k": 0,
+      "cut_pos": [
+        5,
+        3
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        4,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        6,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "77.png",
+      "level": 5,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this path:\n\n1. Start at the bottom-left corner.\n2. Move up to avoid the hole.\n3. Move right to avoid the hole.\n4. Move up to reach the goal.\n\nSo, the sequence of moves is:\n\n```\nANSWER: U R U\n```",
+      "k": 0,
+      "cut_pos": [
+        4,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        3,
+        1
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        4,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "98.png",
+      "level": 8,
+      "plan": "RRRRRRRDDDDDDDDRRD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the top-left corner to the bottom-right corner of the grid while avoiding the holes represented by the blue circles. Here's the step-by-step plan:\n\n1. Start at the top-left corner (1,1).\n2. Move right to (1,2).\n3. Move right to (1,3).\n4. Move right to (1,4).\n5. Move right to (1,5).\n6. Move right to (1,6).\n7. Move right to (1,7).\n8. Move down to (2,7).\n9. Move down to (3,7).\n10. Move down to (4,7).\n11. Move down to (5,7).\n12. Move down to (6,7).\n13. Move down to (7,7).\n14. Move right to (7,8).\n15. Move down to (8,8).\n\nThe sequence of moves is: RRRRRRRDDDDDDDDRRD.\n\nSo, the answer is:\n```\nANSWER: RRRRRRRDDDDDDDDRRD\n```",
+      "k": 4,
+      "cut_pos": [
+        0,
+        7
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        7
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        7
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "34.png",
+      "level": 8,
+      "plan": "RRRDDRRRRDD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move right again to avoid the hole (position 1,3).\n4. Move down to avoid the hole (position 2,3).\n5. Move right to avoid the hole (position 2,4).\n6. Move right to avoid the hole (position 2,5).\n7. Move down to avoid the hole (position 3,5).\n8. Move right to avoid the hole (position 3,6).\n9. Move right to avoid the hole (position 3,7).\n10. Move down to avoid the hole (position 4,7).\n11. Move right to avoid the hole (position 4,8).\n12. Move down to reach the goal (position 5,8).\n\nSo, the full plan is:\n\n```\nANSWER: RRRDDRRRRDD\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "84.png",
+      "level": 5,
+      "plan": "URRURRRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom-left corner to the top-right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 1,1).\n2. Move up to position 1,2.\n3. Move right to position 2,2.\n4. Move up to position 2,3.\n5. Move right to position 3,3.\n6. Move up to position 3,4.\n7. Move right to position 4,4.\n8. Move up to position 4,5.\n9. Move right to position 5,5.\n\nThe sequence of moves is: U, R, U, R, U, R, U, R.\n\nSo, the answer is:\n```\nANSWER: URRURRRR\n```",
+      "k": 0,
+      "cut_pos": [
+        4,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        3,
+        1
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        4,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "44.png",
+      "level": 3,
+      "plan": "RDRDD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to move the player from the top-left corner to the bottom-right corner of the grid without stepping on the hole located in the middle-right cell.\n\nHere's the step-by-step plan:\n\n1. Start at position (1,1).\n2. Move right to position (1,2) because there is no hole here.\n3. Move down to position (2,2) because there is no hole here.\n4. Move right to position (2,3) because there is no hole here.\n5. Move down to position (3,3) because there is no hole here.\n\nSo, the full plan is:\n\n```\nANSWER: RDRDD\n```",
+      "k": 3,
+      "cut_pos": [
+        1,
+        2
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": "D",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "98.png",
+      "level": 6,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 3, 1).\n2. Move right to avoid the hole (position 3, 2).\n3. Move up to reach the gift (position 2, 2).\n4. Move right to avoid the hole (position 2, 3).\n5. Move up to reach the goal (position 1, 3).\n\nSo, the sequence of moves is:\n\n```\nANSWER: R U",
+      "k": 0,
+      "cut_pos": [
+        2,
+        5
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        5
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        5
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "62.png",
+      "level": 8,
+      "plan": "",
+      "plan_source": "none",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the player's initial position (2,3).\n2. Move right to avoid the hole (2,4).\n3. Move right again to avoid another hole (2,5).\n4. Move down to reach the next row (3,5).\n5. Move left to avoid the hole (3,4).\n6. Move left again to avoid another hole (3,3).\n7. Move up to reach the previous row (2,3).\n8. Move right to avoid the hole (2,4).\n9. Move right again to avoid another hole (2,5).\n10. Move down to reach the next row (3,5).\n11. Move left to avoid the hole (3,4).\n12. Move left again to avoid another hole (3,3).\n13. Move up to reach the previous row (2,3).\n14. Move right to avoid the hole (2,4).\n15. Move right again to avoid another hole (2,5).\n16. Move down to reach the next row (3,5).\n17. Move left to avoid the hole (3,4).\n18. Move left again to avoid another hole (3,3).\n19. Move up to reach the previous row (2,3).\n20. Move right to avoid the hole (2,4).\n21. Move right again to avoid another hole (2,5).\n22. Move down to reach the next row (3,5).\n23. Move left to avoid the hole (3,4).\n24. Move left again to avoid another hole (3,3).\n25. Move up to reach the previous row (2,3).\n26. Move right to avoid the hole (2,4).\n27. Move right again to avoid another hole (2,5).\n28. Move down to reach the next row (3,5).\n29. Move left to avoid the hole (3,4).\n30. Move left again to avoid another hole (3,3).\n31. Move up to reach the previous row (2,3).\n32. Move right to avoid the hole (2,4).\n33. Move right again to avoid another hole (2,5).\n34. Move down to reach the next row (3,5).\n35. Move left to avoid the hole (3,4).\n36. Move left again to avoid another hole (3,3).\n37. Move up to reach the previous row (2,3).\n38. Move right to avoid the hole (2,4).\n39. Move right again to avoid another hole (2,5).\n40. Move down to reach the next row (3,5).\n41. Move left to avoid the hole (3,4).\n42. Move left again to avoid another hole (3,3).\n43",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "67.png",
+      "level": 4,
+      "plan": "RDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to navigate from the starting position at the top-left corner (row 1, column 1) to the bottom-right corner (row 4, column 4) without stepping on any holes.\n\nHere's the step-by-step plan:\n\n1. Start at (1, 1).\n2. Move right to (1, 2).\n3. Move down to (2, 2).\n4. Move right to (2, 3).\n5. Move down to (3, 3).\n6. Move right to (3, 4).\n7. Move down to (4, 4).\n\nThe sequence of moves is: R, D, R, D, R, D.\n\nSo, the answer is:\n```\nANSWER: RDRDRD\n```",
+      "k": 1,
+      "cut_pos": [
+        0,
+        1
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        0,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "88.png",
+      "level": 3,
+      "plan": "RRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to navigate from the starting position (top-left corner) to the goal position (top-right corner) without stepping on any holes. The grid is 3x3, and the starting position is at (1,1) and the goal is at (1,3).\n\nHere's the step-by-step plan:\n\n1. Start at (1,1).\n2. Move right to (1,2).\n3. Move right to (1,3).\n\nSo, the full plan is:\n\n```\nANSWER: RRR\n```",
+      "k": 0,
+      "cut_pos": [
+        0,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        1
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "71.png",
+      "level": 3,
+      "plan": "ULRU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to navigate the player from the starting position to the goal position without stepping on any holes. The grid is 3x3, and the player starts at the bottom-left corner. The goal is in the top-right corner.\n\nHere's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 1,1).\n2. Move up to reach the middle-left column (position 2,1).\n3. Move right to reach the middle-right column (position 2,2).\n4. Move up to reach the top-right corner (position 3,3).\n\nSo, the sequence of moves is:\n\nU -> R -> U\n\nTherefore, the answer is:\n\n```\nANSWER: ULRU\n```",
+      "k": 3,
+      "cut_pos": [
+        0,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        1
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "U",
+      "ctrl_gen": "R",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "24.png",
+      "level": 5,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position (top-left corner) to the goal (bottom-right corner) while avoiding the holes represented by the blue circles.\n\nHere's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move down to avoid the hole (position 2,2).\n4. Move right to avoid the hole (position 2,3).\n5. Move down to avoid the hole (position 3,3).\n6. Move right to avoid the hole (position 3,4).\n7. Move down to reach the goal (position 4,4).\n\nSo, the full plan is:\n\n```\nANSWER: R D R",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "51.png",
+      "level": 4,
+      "plan": "ULLUULL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 3, 4).\n2. Move up one row to avoid the hole in the top left corner (position 2, 4).\n3. Move left one column to reach the safe position (position 2, 3).\n4. Move up one row to avoid the hole in the top center (position 1, 3).\n5. Move left one column to reach the safe position (position 1, 2).\n6. Move up one row to avoid the hole in the top right corner (position 0, 2).\n7. Move left one column to reach the safe position (position 0, 1).\n8. Move up one row to reach the goal (position 0, 0).\n\nSo, the full plan is:\n\n```\nANSWER: ULLUULL\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "43.png",
+      "level": 7,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 3, 3).\n2. Move up to avoid the hole in the top-left corner (position 2, 3).\n3. Move right to reach the next column (position 2, 4).\n4. Move down to avoid the hole in the middle-right column (position 3, 4).\n5. Move right to reach the next column (position 3, 5).\n6. Move down to avoid the hole in the bottom-right corner (position 4, 5).\n7. Move left to reach the previous column (position 4, 4).\n8. Move up to avoid the hole in the top-right corner (position 3, 4).\n9. Move right to reach the next column (position 3, 5).\n10. Move down to reach the goal (position 4, 5).\n\nSo, the full plan is:\n\n```\nANSWER: U R D R",
+      "k": 0,
+      "cut_pos": [
+        5,
+        2
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        4,
+        2
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        5,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "11.png",
+      "level": 7,
+      "plan": "URRUUURRRUR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the bottom left corner (row 7, column 1) to the goal position at the top right corner (row 1, column 7) while avoiding the holes represented by the blue squares.\n\nHere's the step-by-step plan:\n\n1. Move up (U) to row 6.\n2. Move right (R) to column 2.\n3. Move up (U) to row 5.\n4. Move right (R) to column 3.\n5. Move up (U) to row 4.\n6. Move right (R) to column 4.\n7. Move up (U) to row 3.\n8. Move right (R) to column 5.\n9. Move up (U) to row 2.\n10. Move right (R) to column 6.\n11. Move up (U) to row 1.\n12. Move right (R) to column 7.\n\nSo, the full plan is:\n\n```\nANSWER: URRUUURRRUR\n```",
+      "k": 0,
+      "cut_pos": [
+        6,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        5,
+        1
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        6,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "34.png",
+      "level": 3,
+      "plan": "URR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position to the goal without stepping on any holes. Let's analyze the grid step by step:\n\n1. The starting position is at the bottom-left corner, which is (2,1).\n2. The goal is at the top-right corner, which is (1,3).\n\nHere is the grid with the positions labeled:\n```\n  1   2   3\n1 H G   .\n2 .   .   .\n3 E   .   .\n```\n- H represents a hole.\n- G represents a gift.\n- E represents the elf.\n\nWe need to avoid the hole and reach the top-right corner. Here is the step-by-step plan:\n\n1. Move up (U) to row 1.\n2. Move right (R) to column 3.\n\nSo, the full plan is:\n```\nANSWER: URR\n```",
+      "k": 2,
+      "cut_pos": [
+        1,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": null,
+      "ctrl_move": "L",
+      "unx_move": "U",
+      "ctrl_gen": "L",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "41.png",
+      "level": 8,
+      "plan": "ULLUUULLUUULLU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 7, 7).\n2. Move up to avoid the hole in the top left corner (position 6, 7).\n3. Move left to reach the next column (position 6, 6).\n4. Move up to avoid the hole in the top center (position 5, 6).\n5. Move left to reach the next column (position 5, 5).\n6. Move up to avoid the hole in the top right corner (position 4, 5).\n7. Move left to reach the next column (position 4, 4).\n8. Move up to avoid the hole in the top center (position 3, 4).\n9. Move left to reach the next column (position 3, 3).\n10. Move up to avoid the hole in the top right corner (position 2, 3).\n11. Move left to reach the next column (position 2, 2).\n12. Move up to avoid the hole in the top center (position 1, 2).\n13. Move right to reach the next column (position 1, 3).\n14. Move up to reach the goal (position 1, 3).\n\nSo, the full plan is:\n\n```\nANSWER: ULLUUULLUUULLU\n```",
+      "k": 0,
+      "cut_pos": [
+        5,
+        5
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        4,
+        5
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        5,
+        4
+      ],
+      "plan_next": "L",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "12.png",
+      "level": 7,
+      "plan": "ULLUUU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position at the bottom center of the grid to the goal located at the top left corner of the grid without stepping on any holes.\n\nHere's the step-by-step plan:\n\n1. Start at the bottom center (position 3, 4).\n2. Move up to avoid the hole at (2, 4) and reach (1, 4).\n3. Move left to avoid the hole at (1, 3) and reach (1, 3).\n4. Move up to avoid the hole at (0, 3) and reach (0, 3).\n5. Move left to avoid the hole at (0, 2) and reach (0, 2).\n6. Move up to avoid the hole at (-1, 2) and reach (-1, 2).\n7. Move left to avoid the hole at (-1, 1) and reach (-1, 1).\n\nSo, the full plan is:\n\n```\nANSWER: ULLUUU\n```",
+      "k": 2,
+      "cut_pos": [
+        4,
+        1
+      ],
+      "planned_move": "L",
+      "planned_land": [
+        4,
+        0
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        4,
+        2
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "17.png",
+      "level": 3,
+      "plan": "RDRDD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to move the player from the starting position to the goal position without stepping on any holes. The grid is 3x3, and the player starts at the top-left corner (position 1,1) and needs to reach the bottom-right corner (position 3,3).\n\nHere's the step-by-step plan:\n\n1. Start at position (1,1).\n2. Move right to position (1,2).\n3. Move down to position (2,2).\n4. Move right to position (2,3).\n5. Move down to position (3,3).\n\nSo, the full plan is:\n\n```\nANSWER: RDRDD\n```",
+      "k": 2,
+      "cut_pos": [
+        2,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "72.png",
+      "level": 5,
+      "plan": "DDRLLLLDDRRRRDDDDDD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the top-right corner to the bottom-left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the top-right corner (position 1,5).\n2. Move down (D) to position 2,5.\n3. Move left (L) to position 2,4.\n4. Move left (L) to position 2,3.\n5. Move left (L) to position 2,2.\n6. Move left (L) to position 2,1.\n7. Move down (D) to position 3,1.\n8. Move down (D) to position 4,1.\n9. Move right (R) to position 4,2.\n10. Move right (R) to position 4,3.\n11. Move right (R) to position 4,4.\n12. Move down (D) to position 5,4.\n13. Move down (D) to position 5,3.\n14. Move down (D) to position 5,2.\n15. Move down (D) to position 5,1.\n\nThe full plan is:\n```\nANSWER: DDRLLLLDDRRRRDDDDDD\n```",
+      "k": 2,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": "L",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "31.png",
+      "level": 7,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 3, 3).\n2. Move up to avoid the hole directly above (position 2, 3).\n3. Move right to reach the next column (position 2, 4).\n4. Move up to avoid the hole directly above (position 1, 4).\n5. Move right to reach the next column (position 1, 5).\n6. Move down to reach the next row (position 2, 5).\n7. Move right to reach the next column (position 2, 6).\n8. Move down to reach the next row (position 3, 6).\n9. Move right to reach the next column (position 3, 7).\n\nThe full plan is:\n```\nANSWER: U R U R D",
+      "k": 0,
+      "cut_pos": [
+        5,
+        3
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        4,
+        3
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        5,
+        4
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "42.png",
+      "level": 5,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the center of the grid.\n2. Move right to avoid the hole.\n3. Move down to reach the goal.\n\nSo, the sequence of moves is:\n\n```\nANSWER: R D\n``",
+      "k": 0,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "79.png",
+      "level": 5,
+      "plan": "RURRRRU",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this path:\n\n1. Start at the position (2, 2).\n2. Move right to avoid the hole at (2, 3).\n3. Move up to avoid the hole at (3, 2).\n4. Move right to avoid the hole at (3, 3).\n5. Move up to avoid the hole at (4, 2).\n6. Move right to avoid the hole at (4, 3).\n7. Move up to avoid the hole at (5, 2).\n8. Move right to reach the goal at (5, 3).\n\nSo, the full plan is:\n\n```\nANSWER: RURRRRU\n",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "63.png",
+      "level": 8,
+      "plan": "UUUUUUL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom right corner to the top left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (7,0).\n2. Move up to avoid the hole in (6,0).\n3. Move up again to avoid the hole in (5,0).\n4. Move up to avoid the hole in (4,0).\n5. Move up to avoid the hole in (3,0).\n6. Move up to avoid the hole in (2,0).\n7. Move up to avoid the hole in (1,0).\n8. Move left to reach the goal.\n\nSo, the full plan is:\n\n```\nANSWER: UUUUUUL\n```",
+      "k": 0,
+      "cut_pos": [
+        7,
+        5
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        6,
+        5
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        7,
+        4
+      ],
+      "plan_next": "U",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "14.png",
+      "level": 8,
+      "plan": "ULLDDRRDDRRUUURRRUU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position to the goal while avoiding the holes represented by the blue squares. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 7, 3).\n2. Move up one row (U) to reach (6, 3).\n3. Move left two columns (LL) to reach (4, 3).\n4. Move down one row (D) to reach (5, 3).\n5. Move right one column (R) to reach (5, 4).\n6. Move down one row (D) to reach (5, 5).\n7. Move right one column (R) to reach (5, 6).\n8. Move down one row (D) to reach (5, 7).\n9. Move right one column (R) to reach (5, 8).\n10. Move up one row (U) to reach (4, 8).\n11. Move right one column (R) to reach (4, 9).\n12. Move up one row (U) to reach (3, 9).\n13. Move right one column (R) to reach (3, 10).\n14. Move up one row (U) to reach (2, 10).\n15. Move right one column (R) to reach (2, 11).\n16. Move up one row (U) to reach (1, 11).\n\nThe full plan is:\n```\nANSWER: ULLDDRRDDRRUUURRRUU\n```",
+      "k": 1,
+      "cut_pos": [
+        5,
+        5
+      ],
+      "planned_move": "L",
+      "planned_land": [
+        5,
+        4
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        5,
+        6
+      ],
+      "plan_next": "L",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "15.png",
+      "level": 8,
+      "plan": "RRRRRRRRRDDDDDDD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the top-left corner (row 1, column 1) to the bottom-right corner (row 8, column 8) without stepping on any holes. The holes are represented by the blue squares with diagonal lines.\n\nHere's the step-by-step plan:\n\n1. Start at (1, 1).\n2. Move right to (1, 2).\n3. Move right to (1, 3).\n4. Move right to (1, 4).\n5. Move right to (1, 5).\n6. Move right to (1, 6).\n7. Move right to (1, 7).\n8. Move right to (1, 8).\n9. Move down to (2, 8).\n10. Move down to (3, 8).\n11. Move down to (4, 8).\n12. Move down to (5, 8).\n13. Move down to (6, 8).\n14. Move down to (7, 8).\n15. Move down to (8, 8).\n\nSo, the full plan is:\n\n```\nANSWER: RRRRRRRRRDDDDDDD\n```",
+      "k": 0,
+      "cut_pos": [
+        0,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "L",
+      "unx_move": "U",
+      "ctrl_gen": "L",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "54.png",
+      "level": 7,
+      "plan": "UUUUULLL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom right corner to the top left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 6, 3).\n2. Move up to position 5, 3.\n3. Move up again to position 4, 3.\n4. Move up to position 3, 3.\n5. Move left to position 3, 2.\n6. Move left to position 3, 1.\n7. Move up to position 2, 1.\n8. Move up to position 1, 1.\n\nThe sequence of moves is: UUUUULLL\n\nSo, the answer is:\n```\nANSWER: UUUUULLL\n```",
+      "k": 1,
+      "cut_pos": [
+        4,
+        4
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        3,
+        4
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        5,
+        4
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "11.png",
+      "level": 5,
+      "plan": "RRRUUUL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal without stepping on any holes. Let's break down the steps:\n\n1. The player starts at position (2, 3).\n2. The goal is at position (4, 3).\n\nHere is the step-by-step plan:\n\n1. Move right (R) to position (2, 4).\n2. Move right (R) to position (2, 5).\n3. Move up (U) to position (1, 5).\n4. Move up (U) to position (0, 5).\n5. Move left (L) to position (-1, 5). Since we can't move outside the grid, we stop here.\n\nHowever, it seems there was an error in the interpretation of the grid boundaries. The correct approach should be:\n\n1. Move right (R) to position (2, 4).\n2. Move right (R) to position (2, 5).\n3. Move up (U) to position (1, 5).\n4. Move up (U) to position (0, 5).\n5. Move left (L) to position (-1, 5). Since we can't move outside the grid, we stop here.\n\nBut the correct path should be:\n\n1. Move right (R) to position (2, 4).\n2. Move right (R) to position (2, 5).\n3. Move up (U) to position (1, 5).\n4. Move up (U) to position (0, 5).\n5. Move left (L) to position (-1, 5). Since we can't move outside the grid, we stop here.\n\nThe correct answer is:\n\n**ANSWER: RRRUUUL**",
+      "k": 0,
+      "cut_pos": [
+        4,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        4,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "96.png",
+      "level": 8,
+      "plan": "RRRDDRRRRDD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the top-left corner to the bottom-right corner while avoiding the holes represented by the blue squares. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move right again to avoid the hole (position 1,3).\n4. Move down to avoid the hole (position 2,3).\n5. Move right to avoid the hole (position 2,4).\n6. Move right again to avoid the hole (position 2,5).\n7. Move down to avoid the hole (position 3,5).\n8. Move right to avoid the hole (position 3,6).\n9. Move right again to avoid the hole (position 3,7).\n10. Move down to avoid the hole (position 4,7).\n11. Move right to avoid the hole (position 4,8).\n12. Move down to reach the goal (position 5,8).\n\nSo, the full plan is:\n\n```\nANSWER: RRRDDRRRRDD\n```",
+      "k": 0,
+      "cut_pos": [
+        0,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "98.png",
+      "level": 7,
+      "plan": "URRUUURRRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the bottom left corner (row 6, column 1) to the goal at the top right corner (row 1, column 7) while avoiding the holes represented by the blue blocks.\n\nHere's the step-by-step plan:\n\n1. Move up (U) to row 5.\n2. Move right (R) to column 2.\n3. Move up (U) to row 4.\n4. Move right (R) to column 3.\n5. Move up (U) to row 3.\n6. Move right (R) to column 4.\n7. Move up (U) to row 2.\n8. Move right (R) to column 5.\n9. Move up (U) to row 1.\n10. Move right (R) to column 6.\n11. Move right (R) to column 7.\n\nSo, the full plan is:\n\n```\nANSWER: URRUUURRRR\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "76.png",
+      "level": 6,
+      "plan": "DDRLLLLLLDDRRRRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the top-right corner to the bottom-left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the top-right corner (position 3, 6).\n2. Move down (D) to position 4, 6.\n3. Move left (L) to position 4, 5.\n4. Move left (L) to position 4, 4.\n5. Move left (L) to position 4, 3.\n6. Move left (L) to position 4, 2.\n7. Move left (L) to position 4, 1.\n8. Move down (D) to position 5, 1.\n9. Move down (D) to position 6, 1.\n10. Move right (R) to position 6, 2.\n11. Move right (R) to position 6, 3.\n12. Move right (R) to position 6, 4.\n13. Move right (R) to position 6, 5.\n14. Move right (R) to position 6, 6.\n\nSo, the full plan is:\n\n```\nANSWER: DDRLLLLLLDDRRRRR\n```",
+      "k": 0,
+      "cut_pos": [
+        0,
+        4
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        1,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        3
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "29.png",
+      "level": 4,
+      "plan": "ULLUU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the bottom-right corner (the player's starting position) to the top-left corner (the goal) while avoiding the holes.\n\nHere's the step-by-step plan:\n\n1. Start at the bottom-right corner (3,4).\n2. Move up (U) to reach (3,3).\n3. Move left (L) to reach (2,3).\n4. Move up (U) to reach (1,3).\n5. Move left (L) to reach (1,2).\n6. Move up (U) to reach (1,1).\n\nSo, the full plan is:\n\n```\nANSWER: ULLUU\n```",
+      "k": 2,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "L",
+      "planned_land": [
+        2,
+        1
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        2
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "57.png",
+      "level": 4,
+      "plan": "ULLUD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to move from your starting position to the goal without stepping on the hole. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 3, 2).\n2. Move up one row (U) to reach (3, 1).\n3. Move left one column (L) to reach (2, 1).\n4. Move up one row (U) to reach (1, 1).\n5. Move right one column (R) to reach (1, 2).\n6. Move down one row (D) to reach (1, 3).\n\nSo, the full plan is:\n\n```\nANSWER: ULLUD\n```",
+      "k": 1,
+      "cut_pos": [
+        1,
+        3
+      ],
+      "planned_move": "L",
+      "planned_land": [
+        1,
+        2
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        0,
+        3
+      ],
+      "plan_next": "L",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "24.png",
+      "level": 3,
+      "plan": "URRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to navigate from the starting position to the goal without stepping on a hole. The grid is 3x3, and the starting position is in the bottom-left corner. The goal is not explicitly stated, but typically in such puzzles, the goal is the top-right corner.\n\nHere's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 2,1).\n2. Move up to reach the top-left corner (position 1,1).\n3. Move right to reach the top-center (position 1,2).\n4. Move right again to reach the top-right corner (position 1,3).\n\nSo, the full plan is:\n\n```\nANSWER: URRR\n",
+      "k": 0,
+      "cut_pos": [
+        1,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        1
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "38.png",
+      "level": 5,
+      "plan": "ULLUUULLLUUULL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the bottom-right corner to the top-left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom-right corner (position 4, 1).\n2. Move up (U) to position 3, 1.\n3. Move left (L) to position 3, 0.\n4. Move up (U) to position 2, 0.\n5. Move left (L) to position 2, -1.\n6. Move up (U) to position 1, -1.\n7. Move left (L) to position 1, -2.\n8. Move up (U) to position 0, -2.\n9. Move left (L) to position 0, -3.\n10. Move up (U) to position -1, -3.\n11. Move left (L) to position -1, -4.\n12. Move up (U) to position -2, -4.\n13. Move left (L) to position -2, -5.\n\nThe full plan is:\n```\nANSWER: ULLUUULLLUUULL\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "37.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the bottom-left corner to the top-right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (row 4, column 1).\n2. Move right to avoid the hole in the middle-left (row 4, column 2).\n3. Move up to reach the top-left corner (row 3, column 2).\n4. Move right to avoid the hole in the top-middle (row 3, column 3).\n5. Move up to reach the top-right corner (row 2, column 3).\n\nSo, the sequence of moves is:\n\n```\nANSWER: R U R U\n",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "38.png",
+      "level": 8,
+      "plan": "URRUUURRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position at the bottom left corner to the goal located in the center of the grid without stepping on any holes.\n\nHere's the step-by-step plan:\n\n1. Move up (U) to reach the second row.\n2. Move right (R) to avoid the hole and reach the third column.\n3. Move up (U) to reach the fourth row.\n4. Move right (R) to avoid the hole and reach the fifth column.\n5. Move up (U) to reach the fifth row.\n6. Move right (R) to avoid the hole and reach the sixth column.\n7. Move up (U) to reach the sixth row.\n8. Move right (R) to avoid the hole and reach the seventh column.\n9. Move up (U) to reach the seventh row.\n10. Move right (R) to reach the goal in the eighth column.\n\nSo, the full plan is:\n\n```\nANSWER: URRUUURRR\n",
+      "k": 0,
+      "cut_pos": [
+        5,
+        0
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        4,
+        0
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        6,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "99.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to move the player from the top-left corner to the bottom-right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at position (1,1).\n2. Move right to avoid the hole at (1,2).\n3. Move down to avoid the hole at (2,1).\n4. Move right to avoid the hole at (2,2).\n5. Move down to avoid the hole at (3,1).\n6. Move right to reach the goal at (3,4).\n\nSo, the full plan is:\n\n```\nANSWER: R D R D R",
+      "k": 0,
+      "cut_pos": [
+        0,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        1
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "68.png",
+      "level": 5,
+      "plan": "RRRRDDDUDRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to navigate from the starting position at the top-left corner (row 1, column 1) to the bottom-right corner (row 5, column 5) without stepping on any holes. The holes are located in rows 2 and 4.\n\nHere's the step-by-step plan:\n\n1. Start at (1, 1).\n2. Move right to (1, 2).\n3. Move right to (1, 3).\n4. Move right to (1, 4).\n5. Move down to (2, 4) - avoid the hole.\n6. Move down to (3, 4).\n7. Move down to (4, 4).\n8. Move down to (5, 4).\n9. Move right to (5, 5).\n\nSo, the full plan is:\n\n```\nANSWER: RRRRDDDUDRR\n```",
+      "k": 5,
+      "cut_pos": [
+        2,
+        4
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        3,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        3
+      ],
+      "plan_next": "D",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "43.png",
+      "level": 3,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to move the player from the starting position to the goal without stepping on the hole. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1).\n2. Move right to avoid the hole (position 4).\n3. Move up to reach the goal (position 2).\n\nSo, the sequence of moves is:\n\n```\nANSWER: R U\n```",
+      "k": 0,
+      "cut_pos": [
+        1,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        2,
+        0
+      ],
+      "plan_next": null,
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "16.png",
+      "level": 4,
+      "plan": "UU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom right corner to the top left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (3,3).\n2. Move up to avoid the hole in the middle of the first column (3,2).\n3. Move up again to reach the top left corner (1,1).\n\nSo, the sequence of moves is:\n\n```\nU\nU\n```\n\nPutting it together, the answer is:\n\n```\nANSWER: UU\n",
+      "k": 1,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        1,
+        2
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "37.png",
+      "level": 5,
+      "plan": "RDRDD",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, you need to navigate around the holes. Here's the step-by-step plan:\n\n1. Start at the top-right corner (row 1, column 3).\n2. Move right (R) to avoid the hole in the top-left corner.\n3. Move down (D) to avoid the hole in the middle-left.\n4. Move right (R) to avoid the hole in the bottom-left.\n5. Move down (D) to reach the goal.\n\nSo, the full plan is:\n\n```\nANSWER: RDRDD\n",
+      "k": 4,
+      "cut_pos": [
+        3,
+        4
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        4,
+        4
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        2,
+        4
+      ],
+      "plan_next": null,
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "64.png",
+      "level": 6,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move down to avoid the hole (position 2,2).\n4. Move right to avoid the hole (position 2,3).\n5. Move down to avoid the hole (position 3,3).\n6. Move right to avoid the hole (position 3,4).\n7. Move down to avoid the hole (position 4,4).\n8. Move right to avoid the hole (position 4,5).\n9. Move down to reach the goal (position 5,5).\n\nSo, the full plan is:\n\n```\nANSWER: R D",
+      "k": 0,
+      "cut_pos": [
+        1,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "16.png",
+      "level": 5,
+      "plan": "RDRDDR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate the player from the starting position to the goal without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the center of the grid.\n2. Move right to avoid the hole.\n3. Move down to avoid the hole.\n4. Move right to avoid the hole.\n5. Move down to avoid the hole.\n6. Move right to reach the goal.\n\nSo, the full plan is:\n\n```\nANSWER: RDRDDR\n",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "5.png",
+      "level": 7,
+      "plan": "",
+      "plan_source": "none",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom-left corner to the top-right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (row 7, column 1).\n2. Move right to avoid the hole in the first cell of the second row.\n3. Continue moving right until you reach the end of the row.\n4. Move up to the next row.\n5. Move right again to avoid the hole in the first cell of the third row.\n6. Continue moving right until you reach the end of the row.\n7. Move up to the next row.\n8. Move right to avoid the hole in the first cell of the fourth row.\n9. Continue moving right until you reach the end of the row.\n10. Move up to the next row.\n11. Move right to avoid the hole in the first cell of the fifth row.\n12. Continue moving right until you reach the end of the row.\n13. Move up to the next row.\n14. Move right to avoid the hole in the first cell of the sixth row.\n15. Continue moving right until you reach the end of the row.\n16. Move up to the next row.\n17. Move right to avoid the hole in the first cell of the seventh row.\n18. Continue moving right until you reach the end of the row.\n\nFollowing these steps, the sequence of moves will be:\n\n```\nR R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "94.png",
+      "level": 8,
+      "plan": "DDRRRDRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. The player starts at the top center of the grid and the goal is the bottom right corner.\n\nHere's the step-by-step plan:\n\n1. Move down (D) to reach the second row.\n2. Move right (R) to avoid the hole in the third column.\n3. Move right (R) again to reach the fourth column.\n4. Move down (D) to reach the fifth row.\n5. Move right (R) to avoid the hole in the sixth column.\n6. Move right (R) again to reach the seventh column.\n7. Move down (D) to reach the eighth row.\n8. Move right (R) to reach the goal in the bottom right corner.\n\nSo, the full plan is:\n\n```\nANSWER: DDRRRDRR\n```",
+      "k": 1,
+      "cut_pos": [
+        1,
+        4
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "D",
+      "ctrl_gen": "U",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "16.png",
+      "level": 7,
+      "plan": "",
+      "plan_source": "none",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 3, 1).\n2. Move up to avoid the hole (U).\n3. Move right to reach the next column (R).\n4. Move up to avoid the hole (U).\n5. Move right to reach the next column (R).\n6. Move up to avoid the hole (U).\n7. Move right to reach the next column (R).\n8. Move up to avoid the hole (U).\n9. Move right to reach the next column (R).\n10. Move up to avoid the hole (U).\n11. Move right to reach the next column (R).\n12. Move up to avoid the hole (U).\n13. Move right to reach the next column (R).\n14. Move up to avoid the hole (U).\n15. Move right to reach the next column (R).\n16. Move up to avoid the hole (U).\n17. Move right to reach the next column (R).\n18. Move up to avoid the hole (U).\n19. Move right to reach the next column (R).\n20. Move up to avoid the hole (U).\n21. Move right to reach the next column (R).\n22. Move up to avoid the hole (U).\n23. Move right to reach the next column (R).\n24. Move up to avoid the hole (U).\n25. Move right to reach the next column (R).\n26. Move up to avoid the hole (U).\n27. Move right to reach the next column (R).\n28. Move up to avoid the hole (U).\n29. Move right to reach the next column (R).\n30. Move up to avoid the hole (U).\n31. Move right to reach the next column (R).\n32. Move up to avoid the hole (U).\n33. Move right to reach the next column (R).\n34. Move up to avoid the hole (U).\n35. Move right to reach the next column (R).\n36. Move up to avoid the hole (U).\n37. Move right to reach the next column (R).\n38. Move up to avoid the hole (U).\n39. Move right to reach the next column (R).\n40. Move up to avoid the hole (U).\n41. Move right to reach the next column (R).\n42. Move up to avoid the hole (U).\n43. Move right to reach the next column (R).\n44. Move up to avoid the hole (U).\n45. Move right to reach the next column (R).\n46. Move up to avoid the hole (U).\n47. Move right to reach the next column (R).\n48. Move up to avoid the hole (U).\n49. Move right to reach the next column (R).\n5",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "28.png",
+      "level": 7,
+      "plan": "URRURR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom center of the grid to the top right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom center (position 3, 4).\n2. Move up to position 2, 4.\n3. Move right to position 2, 5.\n4. Move up to position 1, 5.\n5. Move right to position 1, 6.\n6. Move up to position 0, 6.\n7. Move right to position 0, 7.\n\nSo, the full plan is:\n\n```\nANSWER: URRURR\n```",
+      "k": 0,
+      "cut_pos": [
+        5,
+        3
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        4,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        6,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "62.png",
+      "level": 3,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this sequence of moves:\n\n1. Start at the center square.\n2. Move right to avoid the hole.\n3. Move up to reach the gift.\n\nSo, the full plan is:\n\n```\nANSWER: R U",
+      "k": 0,
+      "cut_pos": [
+        1,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        2
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        2,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "78.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to move the player from the top-left corner to the bottom-right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at position (1,1).\n2. Move right to avoid the hole at (1,2).\n3. Move down to avoid the hole at (2,1).\n4. Move right to avoid the hole at (2,2).\n5. Move down to avoid the hole at (3,1).\n6. Move right to reach the goal at (3,2).\n\nSo, the full plan is:\n\n```\nANSWER: R D R D R",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "85.png",
+      "level": 7,
+      "plan": "URRUUURRRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the bottom left corner (row 6, column 1) to the goal position at the top right corner (row 1, column 7) without stepping on any holes.\n\nHere's the step-by-step plan:\n\n1. Move up (U) to row 5.\n2. Move right (R) to column 2.\n3. Move up (U) to row 4.\n4. Move right (R) to column 3.\n5. Move up (U) to row 3.\n6. Move right (R) to column 4.\n7. Move up (U) to row 2.\n8. Move right (R) to column 5.\n9. Move up (U) to row 1.\n10. Move right (R) to column 6.\n11. Move right (R) to column 7.\n\nSo, the full plan is:\n\n```\nANSWER: URRUUURRRR\n",
+      "k": 1,
+      "cut_pos": [
+        2,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        1
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "U",
+      "ctrl_gen": "R",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "36.png",
+      "level": 8,
+      "plan": "ULLUUULLRRRRRRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 7, 7).\n2. Move up one row (U) to reach (6, 7).\n3. Move left one column (L) to reach (6, 6).\n4. Move up one row (U) to reach (5, 6).\n5. Move left one column (L) to reach (5, 5).\n6. Move up one row (U) to reach (4, 5).\n7. Move left one column (L) to reach (4, 4).\n8. Move up one row (U) to reach (3, 4).\n9. Move left one column (L) to reach (3, 3).\n10. Move up one row (U) to reach (2, 3).\n11. Move left one column (L) to reach (2, 2).\n12. Move up one row (U) to reach (1, 2).\n13. Move right one column (R) to reach (1, 3).\n14. Move right one column (R) to reach (1, 4).\n15. Move right one column (R) to reach (1, 5).\n16. Move right one column (R) to reach (1, 6).\n17. Move right one column (R) to reach (1, 7).\n18. Move right one column (R) to reach (1, 8).\n\nThe full plan is:\n```\nANSWER: ULLUUULLRRRRRRR\n```",
+      "k": 2,
+      "cut_pos": [
+        3,
+        5
+      ],
+      "planned_move": "L",
+      "planned_land": [
+        3,
+        4
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        3,
+        6
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "33.png",
+      "level": 5,
+      "plan": "URRUUURRDDLDDDR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 4, 2).\n2. Move up to avoid the hole in the top left corner (position 3, 2).\n3. Move right to reach the next column (position 3, 3).\n4. Move up to avoid the hole in the top center (position 2, 3).\n5. Move right to reach the next column (position 2, 4).\n6. Move up to avoid the hole in the top right corner (position 1, 4).\n7. Move left to reach the previous column (position 1, 3).\n8. Move down to reach the bottom row (position 2, 3).\n9. Move left to reach the previous column (position 2, 2).\n10. Move down to reach the bottom row (position 3, 2).\n11. Move left to reach the previous column (position 3, 1).\n12. Move down to reach the bottom row (position 4, 1).\n13. Move right to reach the goal (position 4, 2).\n\nSo, the full plan is:\n\n```\nANSWER: URRUUURRDDLDDDR\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "43.png",
+      "level": 6,
+      "plan": "",
+      "plan_source": "none",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position to the goal while avoiding the holes. Let's break down the steps:\n\n1. The player starts at position (2, 3).\n2. The goal is at position (5, 3).\n3. There are holes at positions (1, 2) and (4, 4).\n\nWe can start by moving right to avoid the hole at (1, 2):\n- Move right: R\n\nNow, the player is at (2, 4). We can move up to reach the goal:\n- Move up: U\n\nNow, the player is at (1, 4). We can move right again to reach the goal:\n- Move right: R\n\nNow, the player is at (1, 5). We can move up to reach the goal:\n- Move up: U\n\nNow, the player is at (1, 6). We can move right to reach the goal:\n- Move right: R\n\nNow, the player is at (1, 5). We can move up one more time to reach the goal:\n- Move up: U\n\nNow, the player is at (1, 4). We can move right to reach the goal:\n- Move right: R\n\nNow, the player is at (1, 3). We can move up to reach the goal:\n- Move up: U\n\nNow, the player is at (1, 2). We can move right to reach the goal:\n- Move right: R\n\nNow, the player is at (1, 3). We can move up to reach the goal:\n- Move up: U\n\nNow, the player is at (1, 4). We can move right to reach the goal:\n- Move right: R\n\nNow, the player is at (1, 5). We can move up to reach the goal:\n- Move up: U\n\nNow, the player is at (1, 6). We can move right to reach the goal:\n- Move right: R\n\nNow, the player is at (1, 5). We can move up to reach the goal:\n- Move up: U\n\nNow, the player is at (1, 4). We can move right to reach the goal:\n- Move right: R\n\nNow, the player is at (1, 3). We can move up to reach the goal:\n- Move up: U\n\nNow, the player is at (1, 2). We can move right to reach the goal:\n- Move right: R\n\nNow, the player is at (1, 3). We can move up to reach the goal:\n- Move up: U\n\nNow, the player is at (1, 4). We can move right to reach the goal:\n- Move right: R\n\nNow, the player is at (1, 5). We can move up to reach the goal:\n- Move up: U\n\nNow, the player is at (1, 6). We can move right to reach the goal:\n- Move right: R",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "69.png",
+      "level": 6,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. The holes are represented by the blue blocks with diagonal lines.\n\nHere's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 3, 1).\n2. Move up to avoid the hole (position 2, 1).\n3. Move right to reach the next column (position 2, 2).\n4. Move down to avoid the hole (position 3, 2).\n5. Move right to reach the next column (position 3, 3).\n6. Move down to avoid the hole (position 4, 3).\n7. Move right to reach the next column (position 4, 4).\n8. Move down to avoid the hole (position 5, 4).\n9. Move right to reach the next column (position 5, 5).\n10. Move down to reach the goal (position 6, 5).\n\nSo, the full plan is:\n\n```\nANSWER: U R D R",
+      "k": 0,
+      "cut_pos": [
+        4,
+        3
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        3,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        5,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "L",
+      "ctrl_gen": "D",
+      "unx_gen": "L",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "10.png",
+      "level": 8,
+      "plan": "RRUUURRRUU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the position (2, 3).\n2. Move right (R) to avoid the hole.\n3. Move up (U) to avoid the hole.\n4. Move right (R) to avoid the hole.\n5. Move up (U) to avoid the hole.\n6. Move right (R) to avoid the hole.\n7. Move up (U) to avoid the hole.\n8. Move right (R) to avoid the hole.\n9. Move up (U) to reach the goal.\n\nSo, the full plan is:\n\n```\nANSWER: RRUUURRRUU\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "54.png",
+      "level": 5,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this path:\n\n1. Start at the bottom-left corner (position 4).\n2. Move up to avoid the hole in position 3.\n3. Move right to avoid the hole in position 2.\n4. Move up to avoid the hole in position 1.\n5. Move right to reach the goal.\n\nSo, the full plan is:\n\n```\nANSWER: U R U R\n",
+      "k": 0,
+      "cut_pos": [
+        4,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        3,
+        1
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        4,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "18.png",
+      "level": 4,
+      "plan": "ULL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to move the player from the bottom right corner to the top left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Move up (U) to reach the top row.\n2. Move left (L) to avoid the hole and reach the left side.\n\nSo, the full plan is:\n\n```\nANSWER: ULL\n",
+      "k": 0,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        1,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        3
+      ],
+      "plan_next": "L",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "3.png",
+      "level": 3,
+      "plan": "UR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the hole. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 1).\n2. Move up to avoid the hole (position 4).\n3. Move right to reach the goal (position 6).\n\nSo, the sequence of moves is:\n\n```\nU\nR\n```\n\nPutting it together with the prefix \"ANSWER:\", the final answer is:\n\n```\nANSWER: UR\n",
+      "k": 0,
+      "cut_pos": [
+        1,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        1
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "86.png",
+      "level": 5,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 1,1).\n2. Move up to avoid the hole (position 1,2).\n3. Move right to reach the gift (position 2,2).\n4. Move up to avoid the hole (position 2,1).\n5. Move right to reach the goal (position 3,2).\n\nSo, the full plan is:\n\n```\nANSWER: U R U R",
+      "k": 0,
+      "cut_pos": [
+        2,
+        0
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        1,
+        0
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        2,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "82.png",
+      "level": 7,
+      "plan": "RDRDDRRDD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the top-left corner to the goal position at the bottom-right corner while avoiding the holes represented by the blue circles.\n\nHere's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move down to avoid the hole (position 2,2).\n4. Move right to avoid the hole (position 2,3).\n5. Move down to avoid the hole (position 3,3).\n6. Move right to avoid the hole (position 3,4).\n7. Move down to avoid the hole (position 4,4).\n8. Move right to avoid the hole (position 4,5).\n9. Move down to avoid the hole (position 5,5).\n10. Move right to reach the goal (position 5,6).\n\nSo, the full plan is:\n\n```\nANSWER: RDRDDRRDD\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "52.png",
+      "level": 3,
+      "plan": "ULLUR",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this sequence of moves:\n\n1. Start at the bottom right corner (position 3,3).\n2. Move up to position 2,3.\n3. Move left to position 2,2.\n4. Move up to position 1,2.\n5. Move right to position 1,3.\n\nSo, the full plan is:\n\n```\nANSWER: ULLUR\n```",
+      "k": 0,
+      "cut_pos": [
+        1,
+        2
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": "L",
+      "ctrl_move": "L",
+      "unx_move": "L",
+      "ctrl_gen": "L",
+      "unx_gen": "L",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "41.png",
+      "level": 4,
+      "plan": "RDRDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to navigate from the starting position at the top-left corner (row 1, column 1) to the bottom-right corner (row 4, column 4) without stepping on any holes. The holes are located in rows 2 and 3.\n\nHere's the step-by-step plan:\n\n1. Start at (1, 1).\n2. Move right to (1, 2).\n3. Move down to (2, 2).\n4. Move right to (2, 3).\n5. Move down to (3, 3).\n6. Move right to (3, 4).\n7. Move down to (4, 4).\n\nSo, the full plan is:\n\n```\nANSWER: RDRDRDRD\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "46.png",
+      "level": 7,
+      "plan": "ULLUUUURRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position to the goal while avoiding the holes. Let's break down the steps:\n\n1. Start at the bottom right corner (position 6, 3).\n2. Move up to avoid the hole in the top left corner (position 5, 3).\n3. Move left to reach the next column (position 5, 2).\n4. Move up to avoid the hole in the top center (position 4, 2).\n5. Move left to reach the next column (position 4, 1).\n6. Move up to avoid the hole in the top right corner (position 3, 1).\n7. Move right to reach the next column (position 3, 2).\n8. Move up to avoid the hole in the top center (position 2, 2).\n9. Move right to reach the next column (position 2, 3).\n10. Move up to avoid the hole in the top left corner (position 1, 3).\n11. Move right to reach the goal (position 1, 4).\n\nSo, the full plan is:\n\n```\nANSWER: ULLUUUURRR\n",
+      "k": 5,
+      "cut_pos": [
+        0,
+        3
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": "U",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "45.png",
+      "level": 7,
+      "plan": "UR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 3, 3).\n2. Move up to avoid the hole (position 2, 3).\n3. Move right to reach the goal (position 2, 4).\n\nSo, the sequence of moves is:\nU -> R\n\nThe answer is:\n```\nANSWER: UR\n```",
+      "k": 0,
+      "cut_pos": [
+        4,
+        2
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        3,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        4,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "85.png",
+      "level": 4,
+      "plan": "RURUL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to move the player from the bottom-left corner to the top-right corner without stepping on the hole located in the top-right corner.\n\nHere's the step-by-step plan:\n\n1. Move right (R) to reach the middle-left position.\n2. Move up (U) to reach the top-left position.\n3. Move right (R) to reach the top-right position, but avoid the hole by moving left (L) instead.\n\nSo, the full plan is:\n\n```\nANSWER: RURUL\n```",
+      "k": 2,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        1
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "52.png",
+      "level": 8,
+      "plan": "RDRDDRRDDRRDDRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move down to avoid the hole (position 2,2).\n4. Move right to avoid the hole (position 2,3).\n5. Move down to avoid the hole (position 3,3).\n6. Move right to avoid the hole (position 3,4).\n7. Move down to avoid the hole (position 4,4).\n8. Move right to avoid the hole (position 4,5).\n9. Move down to avoid the hole (position 5,5).\n10. Move right to avoid the hole (position 5,6).\n11. Move down to avoid the hole (position 6,6).\n12. Move right to avoid the hole (position 6,7).\n13. Move down to avoid the hole (position 7,7).\n14. Move right to reach the goal (position 7,8).\n\nSo, the full plan is:\n\n```\nANSWER: RDRDDRRDDRRDDRR\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "54.png",
+      "level": 6,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this path:\n\n1. Start at the top-left corner (row 1, column 1).\n2. Move right to avoid the hole in the top-right corner.\n3. Move down to avoid the hole in the middle-right.\n4. Move left to avoid the hole in the bottom-left.\n5. Move up to reach the goal.\n\nSo, the sequence of moves is:\n\n```\nANSWER: R D L",
+      "k": 0,
+      "cut_pos": [
+        0,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        0
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "72.png",
+      "level": 3,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this path:\n\n1. Start at the top-left corner (position 1).\n2. Move right to the gift box (position 2).\n3. Move down to avoid the hole (position 3).\n\nThe sequence of moves is:\n\n```\nANSWER: R D\n```",
+      "k": 0,
+      "cut_pos": [
+        1,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        0,
+        0
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "52.png",
+      "level": 4,
+      "plan": "ULLULLU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to move the player from the bottom-left corner to the top-left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Move up (U) to reach the second row.\n2. Move left (L) to avoid the hole in the second row, first column.\n3. Move up (U) to reach the third row.\n4. Move left (L) to avoid the hole in the third row, first column.\n5. Move up (U) to reach the fourth row.\n6. Move left (L) to avoid the hole in the fourth row, first column.\n7. Move up (U) to reach the top-left corner.\n\nSo, the full plan is:\n\n```\nANSWER: ULLULLU\n```",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "61.png",
+      "level": 5,
+      "plan": "RRRDDDDDR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to navigate from the starting position at the top-left corner (row 1, column 1) to the goal position at the bottom-right corner (row 5, column 5) without stepping on any holes.\n\nHere's the step-by-step plan:\n\n1. Start at (1, 1).\n2. Move right to (1, 2).\n3. Move right to (1, 3).\n4. Move right to (1, 4).\n5. Move down to (2, 4).\n6. Move down to (3, 4).\n7. Move down to (4, 4).\n8. Move down to (5, 4).\n9. Move right to (5, 5).\n\nSo, the full plan is:\n\n```\nANSWER: RRRDDDDDR\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "81.png",
+      "level": 6,
+      "plan": "RDRDDRRD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move down to avoid the hole (position 2,2).\n4. Move right to avoid the hole (position 2,3).\n5. Move down to avoid the hole (position 3,3).\n6. Move right to avoid the hole (position 3,4).\n7. Move down to avoid the hole (position 4,4).\n8. Move right to avoid the hole (position 4,5).\n9. Move down to reach the goal (position 5,5).\n\nSo, the full plan is:\n\n```\nANSWER: RDRDDRRD\n",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "62.png",
+      "level": 7,
+      "plan": "RDRDDRRDDRRD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the top-left corner to the bottom-right corner of the grid while avoiding the holes represented by the blue squares with diagonal lines.\n\nHere's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to position 1,2.\n3. Move down to position 2,2.\n4. Move right to position 2,3.\n5. Move down to position 3,3.\n6. Move right to position 3,4.\n7. Move down to position 4,4.\n8. Move right to position 4,5.\n9. Move down to position 5,5.\n10. Move right to position 5,6.\n11. Move down to position 6,6.\n12. Move right to position 6,7.\n13. Move down to position 7,7.\n\nThe sequence of moves is: R, D, R, D, R, D, R, D, R, D, R, D, R.\n\nSo, the answer is:\n```\nANSWER: RDRDDRRDDRRD\n```",
+      "k": 2,
+      "cut_pos": [
+        1,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        2
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        0,
+        1
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "35.png",
+      "level": 4,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the hole. Here's the step-by-step plan:\n\n1. Start at the player's position (2, 2).\n2. Move up to avoid the hole in the top-left corner.\n3. Move right to reach the goal.\n\nSo, the sequence of moves is:\nU -> R\n\nThe full plan as a string of U/D/L/R is:\nANSWER: U R",
+      "k": 0,
+      "cut_pos": [
+        1,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        1
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "69.png",
+      "level": 4,
+      "plan": "RURUR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to move the player from the bottom-left corner to the top-right corner without stepping on the holes located at the top-right corners.\n\nHere's the step-by-step plan:\n\n1. Move right (R) to reach the first column.\n2. Move up (U) to reach the second row.\n3. Move right (R) to reach the third column.\n4. Move up (U) to reach the fourth row.\n5. Move right (R) to reach the top-right corner.\n\nSo, the full plan is:\n\n```\nANSWER: RURUR\n```",
+      "k": 3,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        1,
+        2
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "D",
+      "ctrl_gen": "U",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "72.png",
+      "level": 8,
+      "plan": "URRUUURRRUUURR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the bottom-left corner to the top-right corner of the grid while avoiding the holes represented by the blue circles.\n\nHere's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 0,0).\n2. Move up (U) to position (1,0).\n3. Move right (R) to position (1,1).\n4. Move up (U) to position (2,1).\n5. Move right (R) to position (2,2).\n6. Move up (U) to position (3,2).\n7. Move right (R) to position (3,3).\n8. Move up (U) to position (4,3).\n9. Move right (R) to position (4,4).\n10. Move up (U) to position (5,4).\n11. Move right (R) to position (5,5).\n12. Move up (U) to position (6,5).\n13. Move right (R) to position (6,6).\n14. Move up (U) to position (7,6).\n15. Move right (R) to position (7,7).\n\nThe final answer is:\n```\nANSWER: URRUUURRRUUURR\n",
+      "k": 2,
+      "cut_pos": [
+        6,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        6,
+        5
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        5,
+        4
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "88.png",
+      "level": 6,
+      "plan": "RDRDDRRD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move down to avoid the hole (position 2,2).\n4. Move right to avoid the hole (position 2,3).\n5. Move down to avoid the hole (position 3,3).\n6. Move right to avoid the hole (position 3,4).\n7. Move down to avoid the hole (position 4,4).\n8. Move right to avoid the hole (position 4,5).\n9. Move down to reach the goal (position 5,5).\n\nSo, the full plan is:\n\n```\nANSWER: RDRDDRRD\n",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "49.png",
+      "level": 6,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the center of the grid (3,3).\n2. Move right to avoid the hole at (3,4).\n3. Move up to reach the goal at (2,3).\n\nSo, the sequence of moves is:\n\n```\nANSWER: R U",
+      "k": 0,
+      "cut_pos": [
+        3,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        3,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "90.png",
+      "level": 6,
+      "plan": "UULUUU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom right corner to the top left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 5, 3).\n2. Move up (U) to position 4, 3.\n3. Move up (U) again to position 3, 3.\n4. Move left (L) to position 3, 2.\n5. Move left (L) again to position 3, 1.\n6. Move up (U) to position 2, 1.\n7. Move up (U) again to position 1, 1.\n\nThe sequence of moves is: U, U, L, L, U, U.\n\nSo, the answer is:\n```\nANSWER: UULUUU\n```",
+      "k": 1,
+      "cut_pos": [
+        3,
+        4
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        3,
+        5
+      ],
+      "plan_next": "L",
+      "ctrl_move": "U",
+      "unx_move": "D",
+      "ctrl_gen": "U",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "21.png",
+      "level": 6,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the player's initial position (3, 2).\n2. Move up to avoid the hole in the top row (2, 2).\n3. Move right to reach the next column (2, 3).\n4. Move down to reach the next row (3, 3).\n5. Move left to avoid the hole in the previous column (3, 2).\n6. Move up to reach the next row (4, 2).\n7. Move right to reach the next column (4, 3).\n8. Move down to reach the next row (5, 3).\n9. Move left to reach the previous column (5, 2).\n10. Move up to reach the next row (6, 2).\n11. Move right to reach the next column (6, 3).\n12. Move down to reach the next row (5, 3).\n13. Move right to reach the next column (5, 4).\n14. Move down to reach the next row (5, 5).\n15. Move right to reach the next column (5, 6).\n16. Move down to reach the next row (6, 6).\n\nThe full plan is:\n```\nANSWER: U R",
+      "k": 0,
+      "cut_pos": [
+        3,
+        2
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        3,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "U",
+      "unx_move": "R",
+      "ctrl_gen": "U",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "59.png",
+      "level": 7,
+      "plan": "URRDDRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 6, 3).\n2. Move up to avoid the hole in the top left corner (position 5, 3).\n3. Move right to reach the next column (position 5, 4).\n4. Move down to avoid the hole in the middle (position 4, 4).\n5. Move right to reach the next column (position 4, 5).\n6. Move down to avoid the hole in the bottom right corner (position 3, 5).\n7. Move right to reach the next column (position 3, 6).\n8. Move down to reach the goal (position 2, 6).\n\nSo, the full plan is:\n\n```\nANSWER: URRDDRR\n",
+      "k": 0,
+      "cut_pos": [
+        4,
+        4
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        3,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        4,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "86.png",
+      "level": 8,
+      "plan": "RRRDDRRRRDD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move right again to avoid another hole (position 1,3).\n4. Move down to avoid the hole (position 2,3).\n5. Move right to avoid the hole (position 2,4).\n6. Move right again to avoid the hole (position 2,5).\n7. Move down to avoid the hole (position 3,5).\n8. Move right to avoid the hole (position 3,6).\n9. Move right again to avoid the hole (position 3,7).\n10. Move down to avoid the hole (position 4,7).\n11. Move right to avoid the hole (position 4,8).\n12. Move down to reach the goal (position 5,8).\n\nSo, the full plan is:\n\n```\nANSWER: RRRDDRRRRDD\n",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "84.png",
+      "level": 4,
+      "plan": "RDRDDRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the top-left corner to the bottom-right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at position (1,1).\n2. Move right to avoid the hole at (1,2).\n3. Move down to reach (2,1).\n4. Move right to avoid the hole at (2,2).\n5. Move down to reach (3,1).\n6. Move right to avoid the hole at (3,2).\n7. Move down to reach (4,1).\n8. Move right to reach the goal at (4,2).\n\nSo, the full plan is:\n\n```\nANSWER: RDRDDRR\n```",
+      "k": 0,
+      "cut_pos": [
+        0,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        1
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "48.png",
+      "level": 4,
+      "plan": "ULLRU",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, you need to avoid the three blue squares that represent holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 3, 4).\n2. Move up one row (U) to position 2, 4.\n3. Move left one column (L) to position 2, 3.\n4. Move up one row (U) to position 1, 3.\n5. Move right one column (R) to position 1, 4.\n\nSo, the full plan is:\n\n```\nANSWER: ULLRU\n```",
+      "k": 0,
+      "cut_pos": [
+        1,
+        3
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        2
+      ],
+      "plan_next": "L",
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "54.png",
+      "level": 3,
+      "plan": "UR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to navigate the player from the starting position to the goal while avoiding the hole. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 2,3).\n2. Move up to avoid the hole in the top left corner (position 1,1).\n3. Move right to reach the goal (position 3,3).\n\nSo, the sequence of moves is:\nU -> R\n\nThe answer is:\nANSWER: UR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "89.png",
+      "level": 5,
+      "plan": "RRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the starting position at the top-left corner (row 1, column 1) to the goal position at the top-right corner (row 1, column 5) without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at (1, 1).\n2. Move right to avoid the hole at (1, 2).\n3. Move right again to reach the goal.\n\nSo, the sequence of moves is:\n```\nANSWER: RRR\n```\n\n",
+      "k": 1,
+      "cut_pos": [
+        1,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "30.png",
+      "level": 6,
+      "plan": "ULLLLLLLUUUUUUUUU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the bottom-right corner to the top-left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom-right corner (position 6,6).\n2. Move up (U) to position 5,6.\n3. Move left (L) to position 5,5.\n4. Move left (L) to position 5,4.\n5. Move left (L) to position 5,3.\n6. Move left (L) to position 5,2.\n7. Move left (L) to position 5,1.\n8. Move up (U) to position 4,1.\n9. Move up (U) to position 3,1.\n10. Move up (U) to position 2,1.\n11. Move up (U) to position 1,1.\n\nThe full plan is:\n```\nANSWER: ULLLLLLLUUUUUUUUU\n```",
+      "k": 0,
+      "cut_pos": [
+        0,
+        5
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        5
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        4
+      ],
+      "plan_next": "L",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "21.png",
+      "level": 8,
+      "plan": "UUR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom center of the grid to the top right corner while avoiding the holes represented by the blue squares.\n\nHere's the step-by-step plan:\n\n1. Start at the bottom center (4,4).\n2. Move up to avoid the hole (3,4).\n3. Move up again to avoid the hole (2,4).\n4. Move up to reach the top row (1,4).\n5. Move right to the top right corner (1,7).\n\nSo, the sequence of moves is:\n\n```\nU\nU\nU\nR\n```\n\nPutting it together with the prefix \"ANSWER:\", the final answer is:\n\n```\nANSWER: UUR\n```",
+      "k": 0,
+      "cut_pos": [
+        6,
+        4
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        5,
+        4
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        6,
+        5
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "21.png",
+      "level": 5,
+      "plan": "UDL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the top-right corner (position 2, 3).\n2. Move down to avoid the hole (position 3, 3).\n3. Move left to reach the goal (position 3, 2).\n\nSo, the sequence of moves is:\nU -> D -> L\n\nThe answer is:\n```\nANSWER: UDL\n```",
+      "k": 0,
+      "cut_pos": [
+        1,
+        3
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        1,
+        4
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "71.png",
+      "level": 7,
+      "plan": "DDRDDDDDDDLLLLLUUUUUUUU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the top right corner to the bottom left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the top right corner (position 1,7).\n2. Move down (D) to reach (1,6).\n3. Move down (D) to reach (1,5).\n4. Move down (D) to reach (1,4).\n5. Move down (D) to reach (1,3).\n6. Move down (D) to reach (1,2).\n7. Move down (D) to reach (1,1).\n8. Move left (L) to reach (2,1).\n9. Move left (L) to reach (3,1).\n10. Move left (L) to reach (4,1).\n11. Move left (L) to reach (5,1).\n12. Move left (L) to reach (6,1).\n13. Move left (L) to reach (7,1).\n14. Move up (U) to reach (7,2).\n15. Move up (U) to reach (7,3).\n16. Move up (U) to reach (7,4).\n17. Move up (U) to reach (7,5).\n18. Move up (U) to reach (7,6).\n19. Move up (U) to reach (7,7).\n\nSo, the full plan is:\n\n```\nANSWER: DDRDDDDDDDLLLLLUUUUUUUU\n```",
+      "k": 1,
+      "cut_pos": [
+        1,
+        4
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        1,
+        5
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "73.png",
+      "level": 3,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position in the top-left corner to the goal position in the top-right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1).\n2. Move right to avoid the hole (position 2).\n3. Move up to reach the top-right corner (position 3).\n\nSo, the sequence of moves is:\n\n```\nANSWER: R U\n```",
+      "k": 0,
+      "cut_pos": [
+        0,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        1
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "46.png",
+      "level": 8,
+      "plan": "ULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULL",
+      "plan_source": "answer_truncated",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom-right corner to the top-left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom-right corner (7,0).\n2. Move up (U) to reach (6,0).\n3. Move left (L) to reach (6,1).\n4. Move up (U) to reach (5,1).\n5. Move left (L) to reach (5,2).\n6. Move up (U) to reach (4,2).\n7. Move left (L) to reach (4,3).\n8. Move up (U) to reach (3,3).\n9. Move left (L) to reach (3,4).\n10. Move up (U) to reach (2,4).\n11. Move left (L) to reach (2,5).\n12. Move up (U) to reach (1,5).\n13. Move left (L) to reach (1,6).\n14. Move up (U) to reach (0,6).\n15. Move left (L) to reach (0,7).\n16. Move up (U) to reach (0,6).\n17. Move left (L) to reach (0,5).\n18. Move up (U) to reach (0,4).\n19. Move left (L) to reach (0,3).\n20. Move up (U) to reach (0,2).\n21. Move left (L) to reach (0,1).\n22. Move up (U) to reach (0,0).\n\nThe full plan is:\n```\nANSWER: ULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUUULLUU",
+      "k": 1,
+      "cut_pos": [
+        4,
+        6
+      ],
+      "planned_move": "L",
+      "planned_land": [
+        4,
+        5
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        3,
+        6
+      ],
+      "plan_next": "L",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "48.png",
+      "level": 7,
+      "plan": "ULLUR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position to the goal position while avoiding the holes. Let's break down the steps:\n\n1. Start at the bottom right corner (position 6, 3).\n2. Move up to avoid the hole in position 5, 3.\n3. Move left to avoid the hole in position 4, 3.\n4. Move up to avoid the hole in position 3, 3.\n5. Move left to avoid the hole in position 2, 3.\n6. Move up to avoid the hole in position 1, 3.\n7. Move right to reach the goal in position 1, 4.\n\nSo, the sequence of moves is:\n\n```\nU\nL\nU\nL\nU\nR\n```\n\nPutting it all together, the answer is:\n\n```\nANSWER: ULLUR\n```",
+      "k": 2,
+      "cut_pos": [
+        4,
+        5
+      ],
+      "planned_move": "L",
+      "planned_land": [
+        4,
+        4
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        4,
+        6
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "81.png",
+      "level": 7,
+      "plan": "ULLULLULLL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the bottom right corner (position 6, 6) to the goal position at the top left corner (position 1, 1) without stepping on any holes.\n\nHere's the step-by-step plan:\n\n1. Move up (U) to reach row 5.\n2. Move left (L) to reach column 5.\n3. Move up (U) to reach row 4.\n4. Move left (L) to reach column 4.\n5. Move up (U) to reach row 3.\n6. Move left (L) to reach column 3.\n7. Move up (U) to reach row 2.\n8. Move left (L) to reach column 2.\n9. Move up (U) to reach row 1.\n10. Move left (L) to reach column 1.\n\nSo, the full plan is:\n\n```\nANSWER: ULLULLULLL\n```",
+      "k": 0,
+      "cut_pos": [
+        0,
+        5
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        5
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        0,
+        6
+      ],
+      "plan_next": "L",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "48.png",
+      "level": 3,
+      "plan": "URRU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to navigate from the starting position to the goal position without stepping on a hole. The grid is 3x3, and the starting position is at the bottom left corner (row 3, column 1). The goal position is at the top center (row 1, column 2).\n\nHere's the step-by-step plan:\n\n1. Start at (3, 1).\n2. Move up to (2, 1) (U).\n3. Move right to (2, 2) (R).\n4. Move up to (1, 2) (U).\n\nSo, the full plan is:\n\n```\nANSWER: URRU\n```",
+      "k": 0,
+      "cut_pos": [
+        2,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "U",
+      "ctrl_gen": "R",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "54.png",
+      "level": 8,
+      "plan": "URRURRRURRRUR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 1,1).\n2. Move up to avoid the hole (position 1,2).\n3. Move right to reach the next column (position 2,2).\n4. Move up to avoid the hole (position 2,3).\n5. Move right to reach the next column (position 3,3).\n6. Move up to avoid the hole (position 3,4).\n7. Move right to reach the next column (position 4,4).\n8. Move up to avoid the hole (position 4,5).\n9. Move right to reach the next column (position 5,5).\n10. Move up to avoid the hole (position 5,6).\n11. Move right to reach the next column (position 6,6).\n12. Move up to avoid the hole (position 6,7).\n13. Move right to reach the next column (position 7,7).\n14. Move up to reach the goal (position 7,8).\n\nSo, the full plan is:\n\n```\nANSWER: URRURRRURRRUR\n",
+      "k": 10,
+      "cut_pos": [
+        2,
+        7
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        7
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        6
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "59.png",
+      "level": 5,
+      "plan": "D",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the top-right corner (position 2, 3).\n2. Move down to avoid the hole (position 3, 3).\n3. Move left to reach the gift (position 3, 2).\n4. Move up to reach the goal (position 2, 2).\n\nSo, the sequence of moves is:\n\n```\nANSWER: D L U\n",
+      "k": 0,
+      "cut_pos": [
+        1,
+        3
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        1,
+        4
+      ],
+      "plan_next": null,
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "85.png",
+      "level": 5,
+      "plan": "ULLUUULLRRRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 4, 2).\n2. Move up one row (U) to reach (3, 2).\n3. Move left one column (L) to reach (3, 1).\n4. Move up one row (U) to reach (2, 1).\n5. Move left one column (L) to reach (2, 0).\n6. Move up one row (U) to reach (1, 0).\n7. Move right one column (R) to reach (1, 1).\n8. Move right one column (R) to reach (1, 2).\n9. Move right one column (R) to reach (1, 3).\n10. Move right one column (R) to reach (1, 4).\n\nSo, the full plan is:\n\n```\nANSWER: ULLUUULLRRRR\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "83.png",
+      "level": 3,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this sequence of moves:\n\n1. Start at the bottom-left corner (position 3).\n2. Move up to avoid the hole in the middle-left position (position 2).\n3. Move right to reach the top-right position (position 1).\n\nSo, the full plan is:\n\n```\nANSWER: U R",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "60.png",
+      "level": 6,
+      "plan": "UR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the position (2, 3).\n2. Move right to avoid the hole at (2, 4).\n3. Move up to reach the goal at (1, 3).\n\nSo, the sequence of moves is:\nU -> R\n\nThe answer is:\nANSWER: UR",
+      "k": 0,
+      "cut_pos": [
+        2,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "19.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to move the player from the starting position to the goal while avoiding the hole. Here's the step-by-step plan:\n\n1. Start at the player's current position (2, 2).\n2. Move right to avoid the hole (2, 3).\n3. Move up to reach the goal (1, 3).\n\nSo, the full plan is:\n\n```\nANSWER: R U",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "16.png",
+      "level": 6,
+      "plan": "RRRDDRRRRRLLLLDDDDLLLLLDD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the top-left corner to the gift box located in the bottom-left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (1,1).\n2. Move right to (1,2) because there are no holes in that direction.\n3. Move right again to (1,3) for the same reason.\n4. Move down to (2,3) because there are no holes in that direction.\n5. Move right to (2,4) because there are no holes in that direction.\n6. Move right to (2,5) because there are no holes in that direction.\n7. Move down to (3,5) because there are no holes in that direction.\n8. Move right to (3,6) because there are no holes in that direction.\n9. Move down to (4,6) because there are no holes in that direction.\n10. Move left to (4,5) because there are no holes in that direction.\n11. Move left to (4,4) because there are no holes in that direction.\n12. Move left to (4,3) because there are no holes in that direction.\n13. Move left to (4,2) because there are no holes in that direction.\n14. Move left to (4,1) because there are no holes in that direction.\n15. Move down to (5,1) because there are no holes in that direction.\n16. Move down to (6,1) because there are no holes in that direction.\n\nThe final answer is:\n```\nANSWER: RRRDDRRRRRLLLLDDDDLLLLLDD\n",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "81.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to guide the player from their starting position to the gift box while avoiding the holes. Here's the step-by-step plan:\n\n1. The player starts at the bottom-left corner (position 3,1).\n2. The goal is the gift box at (3,3).\n\nLet's move the player step by step:\n\n1. Move right to avoid the hole at (3,1). (R)\n2. Move up to reach the gift box. (U)\n\nSo, the full plan is:\n```\nANSWER: R U",
+      "k": 0,
+      "cut_pos": [
+        3,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        3,
+        0
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "57.png",
+      "level": 3,
+      "plan": "",
+      "plan_source": "none",
+      "plan_gen": "To solve this puzzle, you need to navigate from the starting position at the bottom left corner (row 2, column 1) to the goal position at the top right corner (row 1, column 3) without stepping on the hole in the middle (row 1, column 2).\n\nHere's the step-by-step plan:\n\n1. Start at the bottom left corner (row 2, column 1).\n2. Move up to the top row (row 1, column 1).\n3. Move right to the top right corner (row 1, column 3).\n\nSo, the sequence of moves is:\n\n```\nU R\n```\n\nThis will take you from the bottom left corner to the top right corner without stepping on the hole.",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "55.png",
+      "level": 5,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this sequence of moves:\n\n1. Move right to avoid the hole.\n2. Move up to avoid the hole.\n3. Move right to avoid the hole.\n4. Move up to avoid the hole.\n5. Move right to avoid the hole.\n\nSo, the full plan is:\n\n```\nANSWER: R U R",
+      "k": 0,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "U",
+      "unx_move": "L",
+      "ctrl_gen": "U",
+      "unx_gen": "L",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "6.png",
+      "level": 6,
+      "plan": "ULLUR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position to the goal while avoiding the holes. Let's break down the steps:\n\n1. Start at the bottom right corner (position 5, 3).\n2. Move up to avoid the hole in position 4, 3.\n3. Move left to avoid the hole in position 4, 2.\n4. Move up to avoid the hole in position 3, 2.\n5. Move left to avoid the hole in position 2, 2.\n6. Move up to avoid the hole in position 1, 2.\n7. Move right to reach the goal in position 1, 3.\n\nSo, the sequence of moves is:\n\n```\nU\nL\nU\nL\nU\nR\n```\n\nPutting it together, the answer is:\n\n```\nANSWER: ULLUR\n```",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "74.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this path:\n\n1. Start at the top-left corner (row 1, column 1).\n2. Move right to avoid the hole in the top-right corner.\n3. Move down to avoid the hole in the middle-left corner.\n4. Move right to avoid the hole in the bottom-right corner.\n\nHere's the sequence of moves:\n\n```\nANSWER: R D R",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "65.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the starting position to the goal position without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move down to avoid the hole (position 2,2).\n4. Move right to avoid the hole (position 2,3).\n5. Move down to avoid the hole (position 3,3).\n6. Move right to reach the goal (position 3,4).\n\nSo, the full plan is:\n\n```\nANSWER: R D R",
+      "k": 0,
+      "cut_pos": [
+        0,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "68.png",
+      "level": 4,
+      "plan": "RDDRDR",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this sequence of moves:\n\n1. Move right (R) to avoid the hole at the top left.\n2. Move down (D) to avoid the hole at the top center.\n3. Move right (R) to avoid the hole at the top right.\n4. Move down (D) to avoid the hole at the bottom left.\n5. Move right (R) to reach the goal.\n\nSo, the full plan is:\n\n```\nANSWER: RDDRDR\n",
+      "k": 5,
+      "cut_pos": [
+        3,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        3,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "L",
+      "unx_move": "L",
+      "ctrl_gen": "L",
+      "unx_gen": "L",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "28.png",
+      "level": 3,
+      "plan": "ULL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to move the player from the bottom-left corner to the top-left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Move up (U) to reach the top row.\n2. Move left (L) to reach the top-left corner.\n\nSo, the full plan is:\n\n```\nANSWER: ULL\n```",
+      "k": 1,
+      "cut_pos": [
+        1,
+        0
+      ],
+      "planned_move": "L",
+      "planned_land": [
+        1,
+        0
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        2,
+        0
+      ],
+      "plan_next": "L",
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "20.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, you need to navigate around the holes. Here's the step-by-step plan:\n\n1. Start at the position (2, 2).\n2. Move right to avoid the hole at (2, 3).\n3. Move up to avoid the hole at (1, 3).\n4. Move right to avoid the hole at (3, 3).\n5. Move down to reach the goal at (3, 2).\n\nSo, the full plan is:\n\n```\nANSWER: R U",
+      "k": 0,
+      "cut_pos": [
+        1,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        2
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        2,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "5.png",
+      "level": 3,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To solve this problem, we need to navigate from the starting position to the goal position while avoiding the holes. Let's break it down step by step:\n\n1. The starting position is at the top-left corner (row 1, column 1).\n2. The goal position is at the bottom-right corner (row 3, column 3).\n3. There are two holes in the grid, one at (row 2, column 1) and another at (row 2, column 3).\n\nHere's the plan:\n\n- Start at (1, 1).\n- Move right to avoid the hole at (2, 1). This takes us to (1, 2).\n- Move down to reach the next row. This takes us to (2, 2).\n- Move right again to avoid the hole at (2, 3). This takes us to (2, 3).\n- Move down to reach the last row. This takes us to (3, 3).\n\nSo, the sequence of moves is:\n\nU -> R -> D -> R -> D\n\nPutting it all together, the answer is:\n\n```\nANSWER: U R D",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "43.png",
+      "level": 8,
+      "plan": "RRRRRRRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the top-left corner (row 1, column 1) to the goal position at the top-right corner (row 1, column 8) while avoiding the holes represented by the blue shapes.\n\nHere's the step-by-step plan:\n\n1. Move right (R) to avoid the hole in the second column.\n2. Move right (R) again to avoid the hole in the third column.\n3. Move right (R) to reach the fourth column.\n4. Move right (R) to reach the fifth column.\n5. Move right (R) to reach the sixth column.\n6. Move right (R) to reach the seventh column.\n7. Move right (R) to reach the eighth column and the goal.\n\nSo, the full plan is:\n\n```\nANSWER:RRRRRRRR\n```",
+      "k": 0,
+      "cut_pos": [
+        1,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        0,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "6.png",
+      "level": 5,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the center of the grid (position 3,3).\n2. Move right to avoid the hole (position 3,4).\n3. Move up to reach the gift (position 2,4).\n4. Move right to avoid the hole (position 2,5).\n5. Move down to reach the goal (position 3,5).\n\nSo, the full plan is:\n\n```\nANSWER: R U R D\n",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "60.png",
+      "level": 8,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the center of the grid (4,4).\n2. Move right to avoid the hole at (4,3).\n3. Move up to reach the goal at (3,4).\n\nSo, the sequence of moves is:\n\n```\nANSWER: R U",
+      "k": 0,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "15.png",
+      "level": 7,
+      "plan": "URRDDRRDD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 3, 3).\n2. Move up to avoid the hole directly above (position 2, 3).\n3. Move right to reach the next column (position 2, 4).\n4. Move down to avoid the hole below (position 3, 4).\n5. Move right to reach the next column (position 3, 5).\n6. Move down to avoid the hole below (position 4, 5).\n7. Move right to reach the next column (position 4, 6).\n8. Move down to avoid the hole below (position 5, 6).\n9. Move right to reach the next column (position 5, 7).\n10. Move down to reach the goal (position 6, 7).\n\nThe sequence of moves is: U, R, D, R, D, R, D, R, D.\n\nSo, the answer is:\n```\nANSWER: URRDDRRDD\n```",
+      "k": 0,
+      "cut_pos": [
+        4,
+        2
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        3,
+        2
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        4,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "92.png",
+      "level": 7,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the position (3, 3).\n2. Move right to avoid the hole at (3, 2).\n3. Move up to reach the goal at (2, 3).\n\nSo, the sequence of moves is:\nR -> U\n\nThe answer is:\n```\nANSWER: R U",
+      "k": 0,
+      "cut_pos": [
+        3,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        2,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "68.png",
+      "level": 8,
+      "plan": "UUUULL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom center of the grid to the top left corner while avoiding the holes represented by the blue squares.\n\nHere's the step-by-step plan:\n\n1. Move up (U) to avoid the hole.\n2. Move up (U) again to avoid the hole.\n3. Move left (L) to avoid the hole.\n4. Move left (L) again to avoid the hole.\n5. Move up (U) to reach the top left corner.\n\nSo, the full plan is:\n\n```\nANSWER: UUUULL\n```",
+      "k": 0,
+      "cut_pos": [
+        6,
+        4
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        5,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        6,
+        3
+      ],
+      "plan_next": "U",
+      "ctrl_move": "U",
+      "unx_move": "D",
+      "ctrl_gen": "U",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "50.png",
+      "level": 8,
+      "plan": "RURURURURU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom-left corner to the top-right corner while avoiding the holes represented by the blue blocks. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (row 7, column 2).\n2. Move right to avoid the hole (column 3).\n3. Move up to reach the next row (row 6).\n4. Move right to avoid the hole (column 4).\n5. Move up to reach the next row (row 5).\n6. Move right to avoid the hole (column 5).\n7. Move up to reach the next row (row 4).\n8. Move right to avoid the hole (column 6).\n9. Move up to reach the next row (row 3).\n10. Move right to avoid the hole (column 7).\n11. Move up to reach the next row (row 2).\n12. Move right to reach the top-right corner (column 8).\n\nThe sequence of moves is: R, U, R, U, R, U, R, U, R, U.\n\nSo, the answer is:\n```\nANSWER: RURURURURU\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "90.png",
+      "level": 3,
+      "plan": "LDR",
+      "plan_source": "answer",
+      "plan_gen": "To reach the goal without stepping on a hole, follow this path:\n\n1. Start at the top right corner (row 1, column 3).\n2. Move left to avoid the hole in the middle-left position (row 1, column 2).\n3. Move down to the bottom-left position (row 2, column 2).\n4. Move right to the bottom-right position (row 2, column 3).\n\nThe sequence of moves is:\n\n```\nANSWER: LDR\n```",
+      "k": 1,
+      "cut_pos": [
+        0,
+        1
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "62.png",
+      "level": 5,
+      "plan": "ULLLLLUUL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the bottom-right corner to the top-left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom-right corner (position 4, 5).\n2. Move up (U) to position 3, 5.\n3. Move left (L) to position 3, 4.\n4. Move left (L) to position 3, 3.\n5. Move left (L) to position 3, 2.\n6. Move left (L) to position 3, 1.\n7. Move up (U) to position 2, 1.\n8. Move up (U) to position 1, 1.\n9. Move left (L) to position 1, 0.\n\nThe full plan is:\n```\nANSWER: ULLLLLUUL\n```",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "30.png",
+      "level": 4,
+      "plan": "RDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the starting position to the goal without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1).\n2. Move right to avoid the hole (position 2).\n3. Move down to reach the next row (position 3).\n4. Move right again to avoid another hole (position 4).\n5. Move down to reach the next row (position 5).\n6. Move right to reach the final position (position 6).\n\nSo, the full plan is:\n\n```\nANSWER: RDRDRD\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "68.png",
+      "level": 7,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the top-left corner to the bottom-right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move down to avoid the hole (position 2,2).\n4. Move right to avoid the hole (position 2,3).\n5. Move down to avoid the hole (position 3,3).\n6. Move right to avoid the hole (position 3,4).\n7. Move down to avoid the hole (position 4,4).\n8. Move right to avoid the hole (position 4,5).\n9. Move down to avoid the hole (position 5,5).\n10. Move right to avoid the hole (position 5,6).\n11. Move down to reach the goal (position 6,6).\n\nSo, the full plan is:\n\n```\nANSWER: R D R D",
+      "k": 0,
+      "cut_pos": [
+        0,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "3.png",
+      "level": 6,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 3, 3).\n2. Move up to avoid the hole (position 2, 3).\n3. Move right to reach the goal (position 2, 4).\n\nSo, the full plan is:\n\n```\nANSWER: U R\n```",
+      "k": 0,
+      "cut_pos": [
+        4,
+        2
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        3,
+        2
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        4,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "65.png",
+      "level": 6,
+      "plan": "ULLULLULL",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the bottom right corner (row 6, column 5) to the goal at the top left corner (row 1, column 1) without stepping on any holes.\n\nHere's the step-by-step plan:\n\n1. Move up (U) to row 5.\n2. Move left (L) to column 4.\n3. Move up (U) to row 4.\n4. Move left (L) to column 3.\n5. Move up (U) to row 3.\n6. Move left (L) to column 2.\n7. Move up (U) to row 2.\n8. Move left (L) to column 1.\n9. Move up (U) to row 1.\n\nSo, the full plan is:\n\n```\nANSWER: ULLULLULL\n```",
+      "k": 2,
+      "cut_pos": [
+        0,
+        4
+      ],
+      "planned_move": "L",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        0,
+        5
+      ],
+      "plan_next": "U",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "95.png",
+      "level": 5,
+      "plan": "ULLU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Let's break down the steps:\n\n1. The player starts at position (3, 2).\n2. The goal is at position (1, 1).\n\nHere's the step-by-step plan:\n\n1. Move up (U) to reach row 2.\n2. Move left (L) to avoid the hole and reach column 1.\n3. Move up (U) to reach row 1.\n4. Move left (L) to reach the goal at position (1, 1).\n\nSo, the full plan is:\n\n```\nANSWER: ULLU\n```",
+      "k": 2,
+      "cut_pos": [
+        1,
+        2
+      ],
+      "planned_move": "L",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": "U",
+      "ctrl_move": "U",
+      "unx_move": "D",
+      "ctrl_gen": "U",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "46.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the bottom-left corner to the top-right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 0,3).\n2. Move right to position 1,3.\n3. Move up to position 1,2.\n4. Move up to position 1,1.\n5. Move right to position 2,1.\n6. Move up to position 2,0.\n7. Move right to position 3,0.\n8. Move up to position 3,1.\n9. Move right to position 3,2.\n10. Move up to position 3,3.\n\nSo, the full plan is:\n\n```\nANSWER: R U U R",
+      "k": 0,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "10.png",
+      "level": 5,
+      "plan": "RDRDDRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to avoid the hole (position 1,2).\n3. Move down to reach the next row (position 2,2).\n4. Move right to avoid the hole (position 2,3).\n5. Move down to reach the next row (position 3,3).\n6. Move right to avoid the hole (position 3,4).\n7. Move down to reach the next row (position 4,4).\n8. Move right to reach the goal (position 4,5).\n\nSo, the full plan is:\n\n```\nANSWER: RDRDDRR\n```",
+      "k": 0,
+      "cut_pos": [
+        1,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": "D",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "32.png",
+      "level": 8,
+      "plan": "UUUUUUUULLLLLLLLLU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom right corner to the top left corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (7,0).\n2. Move up (U) to reach (6,0).\n3. Move up (U) again to reach (5,0).\n4. Move up (U) to reach (4,0).\n5. Move up (U) to reach (3,0).\n6. Move up (U) to reach (2,0).\n7. Move up (U) to reach (1,0).\n8. Move left (L) to reach (1,1).\n9. Move left (L) to reach (1,2).\n10. Move left (L) to reach (1,3).\n11. Move left (L) to reach (1,4).\n12. Move left (L) to reach (1,5).\n13. Move left (L) to reach (1,6).\n14. Move left (L) to reach (1,7).\n15. Move up (U) to reach (0,7).\n\nThe full plan is:\n```\nANSWER: UUUUUUUULLLLLLLLLU\n```",
+      "k": 1,
+      "cut_pos": [
+        6,
+        4
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        5,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        6,
+        3
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "89.png",
+      "level": 6,
+      "plan": "U",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 1,1).\n2. Move up to avoid the hole (position 1,2).\n3. Move right to reach the next column (position 2,2).\n4. Move up to avoid the hole (position 2,3).\n5. Move right to reach the next column (position 3,3).\n6. Move up to avoid the hole (position 3,4).\n7. Move right to reach the next column (position 4,4).\n8. Move up to avoid the hole (position 4,5).\n9. Move right to reach the next column (position 5,5).\n10. Move up to reach the goal (position 5,6).\n\nSo, the full plan is:\n\n```\nANSWER: U R",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "36.png",
+      "level": 7,
+      "plan": "ULLUR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 3, 3).\n2. Move up to avoid the hole in the top left corner (position 2, 3).\n3. Move left to avoid the hole in the top center (position 2, 2).\n4. Move up to avoid the hole in the top right corner (position 1, 2).\n5. Move right to reach the goal (position 1, 3).\n\nSo, the sequence of moves is:\n\n```\nU\nL\nU\nR\n```\n\nPutting it together with the prefix \"ANSWER:\", the final answer is:\n\n```\nANSWER: ULLUR\n```",
+      "k": 4,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "53.png",
+      "level": 8,
+      "plan": "RDRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the top-left corner to the goal position at the bottom-right corner while avoiding the holes represented by the blue blocks.\n\nHere's the step-by-step plan:\n\n1. Start at the top-left corner (1,1).\n2. Move right to avoid the hole (1,2).\n3. Move down to avoid the hole (2,2).\n4. Move right to avoid the hole (2,3).\n5. Move down to avoid the hole (3,3).\n6. Move right to avoid the hole (3,4).\n7. Move down to avoid the hole (4,4).\n8. Move right to avoid the hole (4,5).\n9. Move down to avoid the hole (5,5).\n10. Move right to avoid the hole (5,6).\n11. Move down to avoid the hole (6,6).\n12. Move right to avoid the hole (6,7).\n13. Move down to avoid the hole (7,7).\n14. Move right to reach the goal (7,8).\n\nSo, the full plan is:\n\n```\nANSWER: RDRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRRDDRR",
+      "k": 35,
+      "cut_pos": [
+        7,
+        7
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        7,
+        7
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        7,
+        6
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "76.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the center of the grid (row 2, column 2).\n2. Move right to avoid the hole on the left.\n3. Move up to reach the top row.\n4. Move right to avoid the hole on the right.\n5. Move down to reach the bottom row.\n6. Move right to reach the goal.\n\nSo, the sequence of moves is:\n\n```\nANSWER: R U R D R",
+      "k": 0,
+      "cut_pos": [
+        2,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "64.png",
+      "level": 4,
+      "plan": "RDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to move the player from the top-left corner to the bottom-right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the top-left corner (position 1,1).\n2. Move right to position 1,2.\n3. Move down to position 2,2.\n4. Move right to position 2,3.\n5. Move down to position 3,3.\n6. Move right to position 3,4.\n7. Move down to position 4,4.\n\nThe sequence of moves is: R, D, R, D, R, D.\n\nSo, the answer is:\n```\nANSWER: RDRDRD\n```",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "81.png",
+      "level": 8,
+      "plan": "URRUUURRUU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position at the bottom left corner to the goal position at the top right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Move up (U) to reach the second row.\n2. Move right (R) to avoid the hole in the third column.\n3. Move up (U) to reach the fourth row.\n4. Move right (R) to avoid the hole in the fifth column.\n5. Move up (U) to reach the fifth row.\n6. Move right (R) to avoid the hole in the sixth column.\n7. Move up (U) to reach the sixth row.\n8. Move right (R) to avoid the hole in the seventh column.\n9. Move up (U) to reach the seventh row.\n10. Move right (R) to avoid the hole in the eighth column.\n11. Move up (U) to reach the eighth row.\n\nSo, the full plan is:\n\n```\nANSWER: URRUUURRUU\n```",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "62.png",
+      "level": 4,
+      "plan": "ULLU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom right corner to the top left corner without stepping on the holes located at the bottom left and bottom center.\n\nHere's the step-by-step plan:\n\n1. Move up (U) to reach the top row.\n2. Move left (L) to avoid the hole.\n3. Move up (U) again to reach the top left corner.\n\nSo, the full plan is:\n\n```\nANSWER: ULLU\n```",
+      "k": 3,
+      "cut_pos": [
+        2,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        0
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "U",
+      "ctrl_gen": "R",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "78.png",
+      "level": 7,
+      "plan": "",
+      "plan_source": "none",
+      "plan_gen": "To solve this puzzle, we need to navigate from the bottom-right corner (the elf) to the top-left corner (the gift) while avoiding the holes represented by the blue squares.\n\nHere's the step-by-step plan:\n\n1. Move right (R) to avoid the hole.\n2. Move up (U) to avoid the hole.\n3. Move up (U) to avoid the hole.\n4. Move left (L) to avoid the hole.\n5. Move up (U) to avoid the hole.\n6. Move left (L) to avoid the hole.\n7. Move up (U) to avoid the hole.\n8. Move left (L) to avoid the hole.\n9. Move up (U) to avoid the hole.\n10. Move left (L) to avoid the hole.\n11. Move up (U) to avoid the hole.\n12. Move left (L) to avoid the hole.\n13. Move up (U) to avoid the hole.\n14. Move left (L) to avoid the hole.\n15. Move up (U) to avoid the hole.\n16. Move left (L) to avoid the hole.\n17. Move up (U) to avoid the hole.\n18. Move left (L) to avoid the hole.\n19. Move up (U) to avoid the hole.\n20. Move left (L) to avoid the hole.\n21. Move up (U) to avoid the hole.\n22. Move left (L) to avoid the hole.\n23. Move up (U) to avoid the hole.\n24. Move left (L) to avoid the hole.\n25. Move up (U) to avoid the hole.\n26. Move left (L) to avoid the hole.\n27. Move up (U) to avoid the hole.\n28. Move left (L) to avoid the hole.\n29. Move up (U) to avoid the hole.\n30. Move left (L) to avoid the hole.\n31. Move up (U) to avoid the hole.\n32. Move left (L) to avoid the hole.\n33. Move up (U) to avoid the hole.\n34. Move left (L) to avoid the hole.\n35. Move up (U) to avoid the hole.\n36. Move left (L) to avoid the hole.\n37. Move up (U) to avoid the hole.\n38. Move left (L) to avoid the hole.\n39. Move up (U) to avoid the hole.\n40. Move left (L) to avoid the hole.\n41. Move up (U) to avoid the hole.\n42. Move left (L) to avoid the hole.\n43. Move up (U) to avoid the hole.\n44. Move left (L) to avoid the hole.\n45. Move up (U) to avoid the hole.\n46. Move left (L) to avoid the hole.\n47. Move up (",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "26.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position at the bottom left corner (row 4, column 1) to the goal position at the bottom right corner (row 4, column 4) without stepping on any holes.\n\nHere's the step-by-step plan:\n\n1. Start at (4, 1).\n2. Move right to (4, 2).\n3. Move right to (4, 3).\n4. Move right to (4, 4).\n\nSo, the full plan is:\n\n```\nANSWER: RRRR\n```",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "35.png",
+      "level": 5,
+      "plan": "URRRU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position at the bottom left corner to the top right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Move up (U) to reach the second row.\n2. Move right (R) to avoid the hole in the third column.\n3. Move up (U) to reach the fourth row.\n4. Move right (R) to reach the fifth row.\n5. Move right (R) to reach the goal.\n\nSo, the full plan is:\n\n```\nANSWER: URRRU\n```",
+      "k": 3,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        1
+      ],
+      "plan_next": "U",
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "30.png",
+      "level": 5,
+      "plan": "ULLUU",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom right corner (position 4, 3).\n2. Move up one row (U) to reach (4, 2).\n3. Move left one column (L) to reach (3, 2).\n4. Move up one row (U) to reach (2, 2).\n5. Move left one column (L) to reach (2, 1).\n6. Move up one row (U) to reach (1, 1).\n\nThe sequence of moves is: U, L, U, L, U.\n\nSo, the answer is:\n```\nANSWER: ULLUU\n```",
+      "k": 3,
+      "cut_pos": [
+        3,
+        1
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        2,
+        1
+      ],
+      "unexpected_move": "R",
+      "unexpected_land": [
+        3,
+        2
+      ],
+      "plan_next": "U",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "87.png",
+      "level": 6,
+      "plan": "DLDRLDRD",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the bottom center of the grid to the top right corner without stepping on any holes. Here's the step-by-step plan:\n\n1. Start at the bottom center (3rd row, 4th column).\n2. Move up to the second row (D).\n3. Move left to the third column (L).\n4. Move up to the first row (D).\n5. Move right to the second column (R).\n6. Move up to the top row (D).\n7. Move right to the fifth column (R).\n8. Move up to the top right corner (D).\n\nSo, the full plan is:\n\n```\nANSWER: DLDRLDRD\n```",
+      "k": 0,
+      "cut_pos": [
+        5,
+        3
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        5,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        5,
+        2
+      ],
+      "plan_next": "L",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "2.png",
+      "level": 5,
+      "plan": "URRUUURR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, you need to navigate from the starting position at the bottom left corner (row 5, column 1) to the goal position at the top right corner (row 1, column 5) without stepping on any holes.\n\nHere's the step-by-step plan:\n\n1. Move up (U) to reach row 4.\n2. Move right (R) to reach column 2.\n3. Move up (U) to reach row 3.\n4. Move right (R) to reach column 3.\n5. Move up (U) to reach row 2.\n6. Move right (R) to reach column 4.\n7. Move up (U) to reach row 1.\n8. Move right (R) to reach column 5.\n\nSo, the full plan is:\n\n```\nANSWER: URRUUURR\n```",
+      "k": 2,
+      "cut_pos": [
+        2,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "56.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the bottom-left corner (position 0).\n2. Move right to avoid the hole.\n3. Move up to reach the top-right corner.\n\nThe sequence of moves is:\nR -> U\n\nSo, the answer is:\n```\nANSWER: R U\n",
+      "k": 0,
+      "cut_pos": [
+        1,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        0,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "93.png",
+      "level": 7,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the position (2, 3).\n2. Move right to avoid the hole at (2, 4).\n3. Move up to reach the goal at (1, 3).\n\nSo, the sequence of moves is:\nR -> U\n\nThe answer is:\n```\nANSWER: R U",
+      "k": 0,
+      "cut_pos": [
+        3,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        2,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "55.png",
+      "level": 4,
+      "plan": "R",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to move the player from the starting position to the goal while avoiding the holes. Here's the step-by-step plan:\n\n1. Start at the position (1, 1) with the player.\n2. Move right to avoid the hole at (1, 3).\n3. Move up to reach the goal at (2, 1).\n\nSo, the sequence of moves is:\n\n```\nANSWER: R U",
+      "k": 0,
+      "cut_pos": [
+        1,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        2,
+        0
+      ],
+      "plan_next": null,
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "74.png",
+      "level": 5,
+      "plan": "UR",
+      "plan_source": "answer",
+      "plan_gen": "To solve this puzzle, we need to navigate from the starting position to the goal position while avoiding the holes. Let's break down the steps:\n\n1. Start at the bottom-left corner (position 1,1).\n2. Move up to avoid the hole in the top-left corner (position 1,1 -> position 2,1).\n3. Move right to reach the goal (position 2,1 -> position 2,2).\n\nSo, the sequence of moves is:\nU -> R\n\nThe answer is:\nANSWER: UR",
+      "k": 1,
+      "cut_pos": [
+        2,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        4
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    }
+  ],
+  "dropped_landed_on_goal": 12,
+  "ctrl_optimal_planned": [
+    0.6701030927835051,
+    97
+  ],
+  "same_reply_in_both_arms": [
+    0.6288659793814433,
+    97
+  ],
+  "needs_gpu_if_plan_parser_changes": 150,
+  "chance_hazard_aware_ctrl": 0.46134020618556704,
+  "chance_hazard_aware_unx": 0.5627147766323024,
+  "margin_over_uniform4_ctrl": 0.3298969072164948,
+  "margin_over_uniform4_unx": 0.17525773195876293
+}

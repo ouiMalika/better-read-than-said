@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen3.8-27B-FP8",
+  "position": "hidden",
+  "n": 600,
+  "prompt_mode": "plan",
+  "max_new": 512,
+  "source": ".ckpt_qwen38_hidden_pooled_mx512_L48.pt",
+  "incomplete": 0,
+  "first_move_agreement": 0.37833333333333335,
+  "episode_success": 0.36333333333333334,
+  "failure_modes": {
+    "unparsed": 368,
+    "ran_out": 9,
+    "hole": 5
+  },
+  "by_level": {
+    "3": {
+      "n": 100,
+      "first_move": 0.91,
+      "episode": 0.9
+    },
+    "4": {
+      "n": 100,
+      "first_move": 0.38,
+      "episode": 0.37
+    },
+    "5": {
+      "n": 100,
+      "first_move": 0.36,
+      "episode": 0.35
+    },
+    "6": {
+      "n": 100,
+      "first_move": 0.28,
+      "episode": 0.25
+    },
+    "7": {
+      "n": 100,
+      "first_move": 0.2,
+      "episode": 0.19
+    },
+    "8": {
+      "n": 100,
+      "first_move": 0.14,
+      "episode": 0.12
+    }
+  }
+}

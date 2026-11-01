@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen3-VL-32B-Instruct-FP8",
+  "position": "hidden",
+  "n": 600,
+  "prompt_mode": "plan",
+  "max_new": 512,
+  "source": ".ckpt_qwen3vl32_hidden_pooled_mx512_L48.pt",
+  "incomplete": 0,
+  "first_move_agreement": 0.41833333333333333,
+  "episode_success": 0.355,
+  "failure_modes": {
+    "hole": 26,
+    "unparsed": 333,
+    "ran_out": 28
+  },
+  "by_level": {
+    "3": {
+      "n": 100,
+      "first_move": 0.89,
+      "episode": 0.87
+    },
+    "4": {
+      "n": 100,
+      "first_move": 0.64,
+      "episode": 0.51
+    },
+    "5": {
+      "n": 100,
+      "first_move": 0.49,
+      "episode": 0.44
+    },
+    "6": {
+      "n": 100,
+      "first_move": 0.26,
+      "episode": 0.16
+    },
+    "7": {
+      "n": 100,
+      "first_move": 0.15,
+      "episode": 0.12
+    },
+    "8": {
+      "n": 100,
+      "first_move": 0.08,
+      "episode": 0.03
+    }
+  }
+}

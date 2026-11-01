@@ -1,0 +1,4416 @@
+{
+  "model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "levels": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "n": 150,
+  "seed": 0,
+  "scored": 96,
+  "chance_uniform4_ctrl": 0.3619791666666667,
+  "chance_uniform4_unx": 0.3854166666666667,
+  "plan_source": {
+    "answer": 77,
+    "answer_truncated": 73
+  },
+  "ctrl_reply_dist": {
+    "R": 57,
+    "D": 27,
+    "U": 13,
+    "L": 11
+  },
+  "unx_reply_dist": {
+    "R": 67,
+    "D": 19,
+    "U": 17,
+    "L": 5
+  },
+  "plan_next_dist": {
+    "R": 75,
+    "D": 11,
+    "U": 8,
+    "L": 1
+  },
+  "reply_equals_stated_last_move": {
+    "ctrl": 0.5462962962962963,
+    "unx": 0.1388888888888889
+  },
+  "cut_at_start_fraction": 0.28703703703703703,
+  "skipped": {
+    "no usable cut": 10,
+    "planned move enters a hole": 32
+  },
+  "ctrl_optimal_actual": [
+    0.3854166666666667,
+    96
+  ],
+  "unx_optimal_actual": [
+    0.5104166666666666,
+    96
+  ],
+  "unx_optimal_planned": [
+    0.34375,
+    96
+  ],
+  "ctrl_equals_plan_next": [
+    0.5357142857142857,
+    84
+  ],
+  "unx_equals_plan_next": [
+    0.5714285714285714,
+    84
+  ],
+  "reading": "Re-plans: unx_optimal_actual near ctrl_optimal_actual, unx_equals_plan_next low. Carries on regardless: unx_optimal_actual collapses while unx_optimal_planned and unx_equals_plan_next hold up.",
+  "per_instance": [
+    {
+      "id": "64.png",
+      "level": 7,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 66,
+      "cut_pos": [
+        0,
+        6
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        6
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        6
+      ],
+      "plan_next": "U",
+      "ctrl_move": "L",
+      "unx_move": "U",
+      "ctrl_gen": "L",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "63.png",
+      "level": 6,
+      "plan": "RRRRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRRR",
+      "k": 0,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "36.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 3,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "L",
+      "ctrl_gen": "R",
+      "unx_gen": "L",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "80.png",
+      "level": 6,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 1,
+      "cut_pos": [
+        3,
+        5
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        5
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        4,
+        5
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "74.png",
+      "level": 7,
+      "plan": "RRRRDRRRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDRRRD",
+      "k": 2,
+      "cut_pos": [
+        5,
+        5
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        5,
+        6
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        5,
+        4
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "77.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 2,
+      "cut_pos": [
+        4,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        4
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        3,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "98.png",
+      "level": 8,
+      "plan": "RRRRRRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRRRRR",
+      "k": 7,
+      "cut_pos": [
+        0,
+        7
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        7
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        6
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "34.png",
+      "level": 8,
+      "plan": "RRRRRRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRRRRR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "84.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 0,
+      "cut_pos": [
+        4,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        2
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        3,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "44.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 0,
+      "cut_pos": [
+        0,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "98.png",
+      "level": 6,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 4,
+      "cut_pos": [
+        2,
+        5
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        3,
+        5
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        4
+      ],
+      "plan_next": "D",
+      "ctrl_move": "L",
+      "unx_move": "R",
+      "ctrl_gen": "L",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "62.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRDRD",
+      "k": 0,
+      "cut_pos": [
+        3,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        2,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "67.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 3,
+      "cut_pos": [
+        0,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "88.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 0,
+      "cut_pos": [
+        0,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        1
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "71.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 6,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        2
+      ],
+      "plan_next": "D",
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "24.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "51.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 3,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "43.png",
+      "level": 7,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 0,
+      "cut_pos": [
+        5,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        5,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        6,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "11.png",
+      "level": 7,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 3,
+      "cut_pos": [
+        6,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        6,
+        5
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        6,
+        3
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "34.png",
+      "level": 3,
+      "plan": "RRRRURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "41.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRDRD",
+      "k": 0,
+      "cut_pos": [
+        5,
+        5
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        5,
+        6
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        6,
+        5
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "12.png",
+      "level": 7,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 5,
+      "cut_pos": [
+        6,
+        6
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        6,
+        6
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        6,
+        5
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "17.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 0,
+      "cut_pos": [
+        1,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        2,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "72.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 0,
+      "cut_pos": [
+        0,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        4
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "31.png",
+      "level": 7,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 5,
+      "cut_pos": [
+        6,
+        6
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        6,
+        6
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        5,
+        6
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "42.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 2,
+      "cut_pos": [
+        2,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "79.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "63.png",
+      "level": 8,
+      "plan": "RRRRDRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDRRR",
+      "k": 0,
+      "cut_pos": [
+        7,
+        5
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        7,
+        6
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        6,
+        5
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "14.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "15.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 0,
+      "cut_pos": [
+        0,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "54.png",
+      "level": 7,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 1,
+      "cut_pos": [
+        5,
+        5
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        5,
+        6
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        6,
+        5
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "11.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 0,
+      "cut_pos": [
+        4,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        4,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "R",
+      "ctrl_gen": "U",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "96.png",
+      "level": 8,
+      "plan": "RRRRRRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRRRRR",
+      "k": 0,
+      "cut_pos": [
+        0,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "98.png",
+      "level": 7,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 2,
+      "cut_pos": [
+        4,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        4,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "76.png",
+      "level": 6,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 0,
+      "cut_pos": [
+        0,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        5
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        4
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "29.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "57.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 1,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "R",
+      "ctrl_gen": "U",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "24.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 7,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "L",
+      "ctrl_gen": "D",
+      "unx_gen": "L",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "38.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 7,
+      "cut_pos": [
+        4,
+        4
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        3,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        4,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "R",
+      "ctrl_gen": "U",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "37.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "38.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "99.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 1,
+      "cut_pos": [
+        0,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "68.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 0,
+      "cut_pos": [
+        1,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        0,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "43.png",
+      "level": 3,
+      "plan": "RRRRURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 11,
+      "cut_pos": [
+        0,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        1
+      ],
+      "plan_next": "U",
+      "ctrl_move": "L",
+      "unx_move": "R",
+      "ctrl_gen": "L",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "16.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 3,
+      "cut_pos": [
+        3,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        3,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "U",
+      "unx_move": "R",
+      "ctrl_gen": "U",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "37.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 18,
+      "cut_pos": [
+        0,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        3
+      ],
+      "plan_next": "U",
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "64.png",
+      "level": 6,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 0,
+      "cut_pos": [
+        1,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "16.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRDRD",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "5.png",
+      "level": 7,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "94.png",
+      "level": 8,
+      "plan": "RRRRRRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRRRRR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "16.png",
+      "level": 7,
+      "plan": "RRRRDRRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDRRRR",
+      "k": 2,
+      "cut_pos": [
+        3,
+        6
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        6
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        4,
+        6
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "28.png",
+      "level": 7,
+      "plan": "RRRRDRDLUDDLUUURRDRDRLDRDLDLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRL",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDLUDDLUUURRDRDRLDRDLDLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDRDRLDR",
+      "k": 2,
+      "cut_pos": [
+        5,
+        5
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        5,
+        6
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        4,
+        5
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "U",
+      "ctrl_gen": "R",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "62.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 0,
+      "cut_pos": [
+        1,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        2
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        2,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "78.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "85.png",
+      "level": 7,
+      "plan": "RRRRDRRRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDRRRD",
+      "k": 0,
+      "cut_pos": [
+        3,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        1
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        2,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "36.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 2,
+      "cut_pos": [
+        4,
+        7
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        7
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        4,
+        6
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "33.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 6,
+      "cut_pos": [
+        3,
+        4
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        4,
+        4
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        2,
+        4
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "43.png",
+      "level": 6,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 16,
+      "cut_pos": [
+        2,
+        5
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        1,
+        5
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        5
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "69.png",
+      "level": 6,
+      "plan": "RRRRDRDLDLDDLUUURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDLDLDDLUUURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 1,
+      "cut_pos": [
+        4,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        5
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        3,
+        4
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "10.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "54.png",
+      "level": 5,
+      "plan": "RRRRRRURRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRRRURRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+      "k": 0,
+      "cut_pos": [
+        4,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        2
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        3,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "18.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 3,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        3,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "3.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "86.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 0,
+      "cut_pos": [
+        2,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        1
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "82.png",
+      "level": 7,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 9,
+      "cut_pos": [
+        5,
+        6
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        6,
+        6
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        5,
+        5
+      ],
+      "plan_next": "U",
+      "ctrl_move": "R",
+      "unx_move": "U",
+      "ctrl_gen": "R",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "52.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 1,
+      "cut_pos": [
+        1,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        2
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        0,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "41.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 3,
+      "cut_pos": [
+        0,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "46.png",
+      "level": 7,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "45.png",
+      "level": 7,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 0,
+      "cut_pos": [
+        4,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        5,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "85.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 3,
+      "cut_pos": [
+        3,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        2,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "52.png",
+      "level": 8,
+      "plan": "RRRRDRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDRRR",
+      "k": 1,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "54.png",
+      "level": 6,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 1,
+      "cut_pos": [
+        0,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "72.png",
+      "level": 3,
+      "plan": "RRRRURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 0,
+      "cut_pos": [
+        1,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        2,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "52.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 2,
+      "cut_pos": [
+        3,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        3,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "61.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 0,
+      "cut_pos": [
+        0,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        2
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "81.png",
+      "level": 6,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "62.png",
+      "level": 7,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 2,
+      "cut_pos": [
+        0,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "35.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 1,
+      "cut_pos": [
+        1,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "69.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 1,
+      "cut_pos": [
+        3,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        3,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "72.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 5,
+      "cut_pos": [
+        7,
+        7
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        7,
+        7
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        7,
+        6
+      ],
+      "plan_next": "R",
+      "ctrl_move": "L",
+      "unx_move": "L",
+      "ctrl_gen": "L",
+      "unx_gen": "L",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "88.png",
+      "level": 6,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 6,
+      "cut_pos": [
+        3,
+        5
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        4,
+        5
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        2,
+        5
+      ],
+      "plan_next": "U",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "49.png",
+      "level": 6,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 0,
+      "cut_pos": [
+        3,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        4
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        4,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "90.png",
+      "level": 6,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 5,
+      "cut_pos": [
+        5,
+        5
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        5,
+        5
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        4,
+        5
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "21.png",
+      "level": 6,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 11,
+      "cut_pos": [
+        4,
+        5
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        5
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        5,
+        5
+      ],
+      "plan_next": "U",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "59.png",
+      "level": 7,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "86.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRDRD",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "84.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 3,
+      "cut_pos": [
+        0,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "48.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 2,
+      "cut_pos": [
+        1,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        0,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "R",
+      "ctrl_gen": "U",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "54.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 7,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "89.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 0,
+      "cut_pos": [
+        1,
+        0
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        1
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        0,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "30.png",
+      "level": 6,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 38,
+      "cut_pos": [
+        5,
+        5
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        5,
+        5
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        4,
+        5
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "21.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 12,
+      "cut_pos": [
+        7,
+        7
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        6,
+        7
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        7,
+        6
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "21.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "71.png",
+      "level": 7,
+      "plan": "RRRRRRDR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRRRDR",
+      "k": 2,
+      "cut_pos": [
+        0,
+        6
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        6
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        5
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "73.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 1,
+      "cut_pos": [
+        0,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        2
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        1,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "46.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRDRD",
+      "k": 3,
+      "cut_pos": [
+        5,
+        7
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        5,
+        7
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        4,
+        7
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "48.png",
+      "level": 7,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 11,
+      "cut_pos": [
+        4,
+        6
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        3,
+        6
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        4,
+        5
+      ],
+      "plan_next": "R",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "81.png",
+      "level": 7,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 4,
+      "cut_pos": [
+        0,
+        6
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        1,
+        6
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        5
+      ],
+      "plan_next": "D",
+      "ctrl_move": "L",
+      "unx_move": "R",
+      "ctrl_gen": "L",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "48.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 1,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "54.png",
+      "level": 8,
+      "plan": "RRRRDRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDRRR",
+      "k": 2,
+      "cut_pos": [
+        5,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        5,
+        5
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        4,
+        4
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "59.png",
+      "level": 5,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRDD",
+      "k": 0,
+      "cut_pos": [
+        1,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        4
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        2,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "L",
+      "ctrl_gen": "R",
+      "unx_gen": "L",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "85.png",
+      "level": 5,
+      "plan": "RRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDRRRRDR",
+      "k": 3,
+      "cut_pos": [
+        2,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        3
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "83.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 9,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        1
+      ],
+      "plan_next": null,
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "60.png",
+      "level": 6,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 3,
+      "cut_pos": [
+        2,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        5
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        4
+      ],
+      "plan_next": "D",
+      "ctrl_move": "L",
+      "unx_move": "D",
+      "ctrl_gen": "L",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "19.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "16.png",
+      "level": 6,
+      "plan": "RRRRDRDLDLURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDLDLURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "81.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 2,
+      "cut_pos": [
+        3,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        2,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "L",
+      "ctrl_gen": "R",
+      "unx_gen": "L",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "57.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 9,
+      "cut_pos": [
+        2,
+        2
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        2
+      ],
+      "plan_next": null,
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "55.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "k": 0,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "D",
+      "ctrl_gen": "R",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "6.png",
+      "level": 6,
+      "plan": "RRRRDRDLDLURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDLDLURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 6,
+      "cut_pos": [
+        3,
+        5
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        4,
+        5
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        3,
+        4
+      ],
+      "plan_next": "L",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "74.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "65.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 0,
+      "cut_pos": [
+        0,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "68.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 1,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "28.png",
+      "level": 3,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 1,
+      "cut_pos": [
+        2,
+        1
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        0
+      ],
+      "plan_next": "R",
+      "ctrl_move": "U",
+      "unx_move": "U",
+      "ctrl_gen": "U",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "20.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 2,
+      "cut_pos": [
+        1,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "5.png",
+      "level": 3,
+      "plan": "RRRRURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "43.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "6.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRDRD",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "60.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRDRD",
+      "k": 1,
+      "cut_pos": [
+        2,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        5
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        2,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "15.png",
+      "level": 7,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 0,
+      "cut_pos": [
+        4,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        5,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "92.png",
+      "level": 7,
+      "plan": "RRRRDRRRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDRRRD",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "68.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRDRD",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "50.png",
+      "level": 8,
+      "plan": "RRRRDRRRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRRRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "90.png",
+      "level": 3,
+      "plan": "RRRRURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 8,
+      "cut_pos": [
+        0,
+        2
+      ],
+      "planned_move": "U",
+      "planned_land": [
+        0,
+        2
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        1
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "62.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRDRD",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "30.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "68.png",
+      "level": 7,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 2,
+      "cut_pos": [
+        0,
+        4
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        5
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "3.png",
+      "level": 6,
+      "plan": "RRRRDRDLDLDDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDLDLDDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUU",
+      "k": 0,
+      "cut_pos": [
+        4,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        4,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        3,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "65.png",
+      "level": 6,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 1,
+      "cut_pos": [
+        0,
+        5
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        0,
+        5
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        0,
+        4
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "95.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "46.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 3,
+      "cut_pos": [
+        2,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        2,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "10.png",
+      "level": 5,
+      "plan": "RRRRDDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRD",
+      "k": 4,
+      "cut_pos": [
+        1,
+        4
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        2,
+        4
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        1,
+        3
+      ],
+      "plan_next": "D",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "32.png",
+      "level": 8,
+      "plan": "RRRRDRRRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDRRRD",
+      "k": 5,
+      "cut_pos": [
+        7,
+        7
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        7,
+        7
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        7,
+        6
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "R",
+      "ctrl_gen": "D",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "89.png",
+      "level": 6,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "36.png",
+      "level": 7,
+      "plan": "RRRRDRRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDRRRR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "53.png",
+      "level": 8,
+      "plan": "RRRRDRRRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRRRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "76.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "64.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "81.png",
+      "level": 8,
+      "plan": "RRRRDDRDRDRD",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDDRDRDRD",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "62.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 2,
+      "cut_pos": [
+        3,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        3
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        3,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "R",
+      "unx_move": "U",
+      "ctrl_gen": "R",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      },
+      "unx": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "78.png",
+      "level": 7,
+      "plan": "RRRRDRRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRRDRRRR",
+      "k": 0,
+      "cut_pos": [
+        6,
+        6
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        6,
+        6
+      ],
+      "unexpected_move": "L",
+      "unexpected_land": [
+        6,
+        5
+      ],
+      "plan_next": "R",
+      "ctrl_move": "D",
+      "unx_move": "D",
+      "ctrl_gen": "D",
+      "unx_gen": "D",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      }
+    },
+    {
+      "id": "26.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "35.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "30.png",
+      "level": 5,
+      "plan": "RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDR",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "87.png",
+      "level": 6,
+      "plan": "RRRRDRDLDLDDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDLDLDDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUUURRDRDLDLLDRDLDLUU",
+      "skipped": "planned move enters a hole"
+    },
+    {
+      "id": "2.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "skipped": "no usable cut"
+    },
+    {
+      "id": "56.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 3,
+      "cut_pos": [
+        1,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        3
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        0,
+        3
+      ],
+      "plan_next": null,
+      "ctrl_move": "R",
+      "unx_move": "R",
+      "ctrl_gen": "R",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": null
+      }
+    },
+    {
+      "id": "93.png",
+      "level": 7,
+      "plan": "RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDDRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 1,
+      "cut_pos": [
+        3,
+        3
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        3,
+        4
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        2,
+        3
+      ],
+      "plan_next": "R",
+      "ctrl_move": "L",
+      "unx_move": "R",
+      "ctrl_gen": "L",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "55.png",
+      "level": 4,
+      "plan": "RRRR",
+      "plan_source": "answer",
+      "plan_gen": "ANSWER: RRRR DDRR",
+      "k": 2,
+      "cut_pos": [
+        1,
+        2
+      ],
+      "planned_move": "R",
+      "planned_land": [
+        1,
+        3
+      ],
+      "unexpected_move": "D",
+      "unexpected_land": [
+        2,
+        2
+      ],
+      "plan_next": "R",
+      "ctrl_move": "L",
+      "unx_move": "R",
+      "ctrl_gen": "L",
+      "unx_gen": "R",
+      "ctrl": {
+        "optimal_actual": true,
+        "optimal_planned": true,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": true
+      }
+    },
+    {
+      "id": "74.png",
+      "level": 5,
+      "plan": "RRRRDRDURURURURURURURURURURURURURURURURURURURURURU",
+      "plan_source": "answer_truncated",
+      "plan_gen": "ANSWER: RRRRDRDURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR",
+      "k": 6,
+      "cut_pos": [
+        4,
+        4
+      ],
+      "planned_move": "D",
+      "planned_land": [
+        4,
+        4
+      ],
+      "unexpected_move": "U",
+      "unexpected_land": [
+        3,
+        4
+      ],
+      "plan_next": "U",
+      "ctrl_move": "D",
+      "unx_move": "U",
+      "ctrl_gen": "D",
+      "unx_gen": "U",
+      "ctrl": {
+        "optimal_actual": false,
+        "optimal_planned": false,
+        "equals_plan_next": false
+      },
+      "unx": {
+        "optimal_actual": false,
+        "optimal_planned": true,
+        "equals_plan_next": true
+      }
+    }
+  ],
+  "dropped_landed_on_goal": 12,
+  "ctrl_optimal_planned": [
+    0.3854166666666667,
+    96
+  ],
+  "same_reply_in_both_arms": [
+    0.5520833333333334,
+    96
+  ],
+  "needs_gpu_if_plan_parser_changes": 150,
+  "chance_hazard_aware_ctrl": 0.6276041666666666,
+  "chance_hazard_aware_unx": 0.5538194444444444,
+  "margin_over_uniform4_ctrl": 0.0234375,
+  "margin_over_uniform4_unx": 0.12499999999999994
+}

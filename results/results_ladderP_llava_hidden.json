@@ -1,0 +1,51 @@
+{
+  "model": "llava-hf/llava-1.5-7b-hf",
+  "layer": 21,
+  "levels": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "pooled": true,
+  "position": "hidden",
+  "max_new": 512,
+  "rungs": {
+    "pooled": {
+      "n": 600,
+      "1_free_generation": 0.33166666666666667,
+      "1_free_unparsed": 0.0,
+      "1_free_truncated": 0.695,
+      "2_forced_choice": 0.325,
+      "3_probe_then_rule": [
+        0.755,
+        0.03410500126244114
+      ],
+      "4_linear_action": [
+        0.77,
+        0.028100929205672587
+      ],
+      "4_linear_action_shuffled": [
+        0.37666666666666665,
+        0.04047240486498863
+      ],
+      "5_mlp_action": [
+        0.7616666666666667,
+        0.023442743487531986
+      ],
+      "5_mlp_action_shuffled": [
+        0.345,
+        0.021668615296988627
+      ],
+      "baselines": {
+        "uniform_4": 0.34458333333333335,
+        "uniform_on_grid": 0.44513888888888886,
+        "uniform_hazard_aware": 0.5618055555555556,
+        "goal_direction_TRUE_coords": 0.8583333333333333,
+        "best_constant": 0.3566666666666667
+      }
+    }
+  }
+}

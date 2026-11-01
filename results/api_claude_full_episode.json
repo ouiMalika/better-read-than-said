@@ -1,0 +1,39 @@
+{
+  "source": "results_audit/api_claude_full.json",
+  "model": "claude-opus-5",
+  "provider": "anthropic",
+  "metric": "EPISODE SUCCESS (plan executed to the goal) -- comparable to VSP",
+  "n": 600,
+  "n_without_plan": 0,
+  "success": 0.97,
+  "failure_modes": {
+    "hole": 10,
+    "ran_out": 8
+  },
+  "by_level": {
+    "3": {
+      "n": 100,
+      "success": 0.99
+    },
+    "4": {
+      "n": 100,
+      "success": 0.99
+    },
+    "5": {
+      "n": 100,
+      "success": 0.99
+    },
+    "6": {
+      "n": 100,
+      "success": 1.0
+    },
+    "7": {
+      "n": 100,
+      "success": 0.86
+    },
+    "8": {
+      "n": 100,
+      "success": 0.99
+    }
+  }
+}

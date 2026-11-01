@@ -1,0 +1,193 @@
+{
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "layer": 21,
+  "n_episodes": 60,
+  "outcomes": {
+    "goal": 0,
+    "hole": 17,
+    "budget": 43
+  },
+  "per_step": {
+    "0": {
+      "agree_true": 0.5333333333333333,
+      "agree_decoded": 0.55,
+      "uniform_4": 0.375,
+      "uniform_on_grid": 0.5277777777777777,
+      "hazard_aware": 0.6388888888888888,
+      "goal_only": 0.8,
+      "decoded_geometry_goal_only": 0.7166666666666667,
+      "n": 60
+    },
+    "1": {
+      "agree_true": 0.3137254901960784,
+      "agree_decoded": 0.4117647058823529,
+      "uniform_4": 0.37745098039215685,
+      "uniform_on_grid": 0.47222222222222215,
+      "hazard_aware": 0.5522875816993464,
+      "goal_only": 0.7450980392156863,
+      "n": 51
+    },
+    "2": {
+      "agree_true": 0.2553191489361702,
+      "agree_decoded": 0.2553191489361702,
+      "uniform_4": 0.3829787234042553,
+      "uniform_on_grid": 0.4982269503546099,
+      "hazard_aware": 0.5815602836879432,
+      "goal_only": 0.7659574468085106,
+      "n": 47
+    },
+    "3": {
+      "agree_true": 0.25,
+      "agree_decoded": 0.22727272727272727,
+      "uniform_4": 0.38636363636363635,
+      "uniform_on_grid": 0.5113636363636361,
+      "hazard_aware": 0.5833333333333331,
+      "goal_only": 0.8409090909090909,
+      "n": 44
+    },
+    "4": {
+      "agree_true": 0.20930232558139536,
+      "agree_decoded": 0.18604651162790697,
+      "uniform_4": 0.38953488372093026,
+      "uniform_on_grid": 0.5426356589147286,
+      "hazard_aware": 0.6104651162790696,
+      "goal_only": 0.8604651162790697,
+      "n": 43
+    },
+    "5": {
+      "agree_true": 0.23255813953488372,
+      "agree_decoded": 0.20930232558139536,
+      "uniform_4": 0.3953488372093023,
+      "uniform_on_grid": 0.5271317829457363,
+      "hazard_aware": 0.6104651162790696,
+      "goal_only": 0.8604651162790697,
+      "n": 43
+    },
+    "6": {
+      "agree_true": 0.18604651162790697,
+      "agree_decoded": 0.16279069767441862,
+      "uniform_4": 0.38953488372093026,
+      "uniform_on_grid": 0.5348837209302325,
+      "hazard_aware": 0.6027131782945737,
+      "goal_only": 0.8604651162790697,
+      "n": 43
+    },
+    "7": {
+      "agree_true": 0.23255813953488372,
+      "agree_decoded": 0.20930232558139536,
+      "uniform_4": 0.3953488372093023,
+      "uniform_on_grid": 0.5271317829457363,
+      "hazard_aware": 0.6104651162790696,
+      "goal_only": 0.8604651162790697,
+      "n": 43
+    },
+    "8": {
+      "agree_true": 0.18604651162790697,
+      "agree_decoded": 0.16279069767441862,
+      "uniform_4": 0.38953488372093026,
+      "uniform_on_grid": 0.5348837209302325,
+      "hazard_aware": 0.6027131782945737,
+      "goal_only": 0.8604651162790697,
+      "n": 43
+    },
+    "9": {
+      "agree_true": 0.23255813953488372,
+      "agree_decoded": 0.20930232558139536,
+      "uniform_4": 0.3953488372093023,
+      "uniform_on_grid": 0.5271317829457363,
+      "hazard_aware": 0.6104651162790696,
+      "goal_only": 0.8604651162790697,
+      "n": 43
+    },
+    "10": {
+      "agree_true": 0.18604651162790697,
+      "agree_decoded": 0.16279069767441862,
+      "uniform_4": 0.38953488372093026,
+      "uniform_on_grid": 0.5348837209302325,
+      "hazard_aware": 0.6027131782945737,
+      "goal_only": 0.8604651162790697,
+      "n": 43
+    },
+    "11": {
+      "agree_true": 0.23255813953488372,
+      "agree_decoded": 0.20930232558139536,
+      "uniform_4": 0.3953488372093023,
+      "uniform_on_grid": 0.5271317829457363,
+      "hazard_aware": 0.6104651162790696,
+      "goal_only": 0.8604651162790697,
+      "n": 43
+    }
+  },
+  "fresh_state_control": {
+    "0": {
+      "agree_true": 0.4666666666666667,
+      "n": 60
+    },
+    "1": {
+      "agree_true": 0.49019607843137253,
+      "n": 51
+    },
+    "2": {
+      "agree_true": 0.5319148936170213,
+      "n": 47
+    },
+    "3": {
+      "agree_true": 0.4772727272727273,
+      "n": 44
+    },
+    "4": {
+      "agree_true": 0.4186046511627907,
+      "n": 43
+    },
+    "5": {
+      "agree_true": 0.46511627906976744,
+      "n": 43
+    },
+    "6": {
+      "agree_true": 0.4186046511627907,
+      "n": 43
+    },
+    "7": {
+      "agree_true": 0.5581395348837209,
+      "n": 43
+    },
+    "8": {
+      "agree_true": 0.4883720930232558,
+      "n": 43
+    },
+    "9": {
+      "agree_true": 0.37209302325581395,
+      "n": 43
+    },
+    "10": {
+      "agree_true": 0.6046511627906976,
+      "n": 43
+    },
+    "11": {
+      "agree_true": 0.5116279069767442,
+      "n": 43
+    }
+  },
+  "first_visit": {
+    "agree_true": 0.391025641025641,
+    "goal_only": 0.7884615384615384,
+    "hazard_aware": 0.5966880341880341,
+    "n_states": 156
+  },
+  "cycles": {
+    "n_episodes_cycling": 43,
+    "mean_close_step": 2.9302325581395348,
+    "cycle_lengths": [
+      1,
+      2
+    ]
+  },
+  "summary": {
+    "step0_agree_true": 0.5333333333333333,
+    "step3plus_agree_true": 0.2164082687338501,
+    "step0_decoded_geometry_goal_only": 0.7166666666666667,
+    "reading": "Compare step0 to step3+. A drop is a rollout failure invisible to the first-action results the audit is built on. Note n falls with t (episodes terminate), so late steps are a survivor-biased subsample -- read n.",
+    "decay_reading": "pi is a pure function of position, so it cannot degrade with time. Read the decay against fresh_state_control, which draws states from a t-INDEPENDENT distribution and must therefore be flat; and against first_visit, which counts each state once instead of letting a short cycle donate the same wrong action to every later step.",
+    "dissociation_reading": "decoded_geometry_goal_only is a rule driven ENTIRELY by linear readouts of the model's own activations. If it exceeds step0_agree_true, then information sufficient for better action is present and linearly accessible in the representation while the policy fails to use it -- a representation-behaviour dissociation over GEOMETRY (not the full map). Handoff section 1.2 declared this direction dead by testing the full-map version instead."
+  }
+}

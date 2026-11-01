@@ -1,0 +1,78 @@
+{
+  "hard_threshold_sweep_note": "precision and recall in this run were averaged over ALL evaluation mazes, counting a maze where the threshold flags nothing as precision 0.0 rather than undefined. So the 0.0 precision at thresholds 2 and 4 means 'nothing was flagged', not 'nothing flagged was a hole'. The success column is unaffected, and it is the only column the papers cite. perception_solver_v2.py now averages each over the mazes where it is defined and records those denominators.",
+  "n": 200,
+  "auprc": 0.24752288857754884,
+  "base_rate": 0.16,
+  "auprc_note": "AUPRC vs base_rate is the threshold-free 'is it there' measure",
+  "platt": {
+    "a": 1.0609955530523623,
+    "b": -1.5343272624659523
+  },
+  "controls": {
+    "oracle_map": 1.0,
+    "empty_map": 0.5
+  },
+  "hard_threshold_sweep": {
+    "-4": {
+      "precision": 0.16000000000000011,
+      "recall": 1.0,
+      "f1": 0.27586206896551685,
+      "success": 0.0
+    },
+    "-2": {
+      "precision": 0.16000000000000011,
+      "recall": 1.0,
+      "f1": 0.27586206896551685,
+      "success": 0.0
+    },
+    "-1": {
+      "precision": 0.16048484848484856,
+      "recall": 1.0,
+      "f1": 0.2765744600227355,
+      "success": 0.0
+    },
+    "0": {
+      "precision": 0.22231881710480775,
+      "recall": 0.6275,
+      "f1": 0.31251577821230503,
+      "success": 0.4
+    },
+    "1": {
+      "precision": 0.04333333333333334,
+      "recall": 0.0125,
+      "f1": 0.01885714285714286,
+      "success": 0.5
+    },
+    "2": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "success": 0.5
+    },
+    "4": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "success": 0.5
+    }
+  },
+  "risk_sensitive_sweep": {
+    "0.0": 0.5,
+    "0.5": 0.62,
+    "1.0": 0.61,
+    "2.0": 0.62,
+    "4.0": 0.62,
+    "8.0": 0.62,
+    "16.0": 0.62,
+    "32.0": 0.62,
+    "64.0": 0.63
+  },
+  "verdict": {
+    "best_lambda": 64.0,
+    "best_lambda_success": 0.63,
+    "best_tau": 1,
+    "best_tau_success": 0.5,
+    "empty_map_success": 0.5,
+    "reading": "If best_lambda_success > empty_map_success, the hole signal IS usable and v1's failure was miscalibrated hard composition. If it never beats empty_map, the perception is genuinely too weak to plan with -- and THAT is the finding v1 claimed but did not establish."
+  }
+}
